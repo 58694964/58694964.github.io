@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepAssistant - AI Chat Assistant</title>
+    <title>DipSync - AI Assistant</title>
     <style>
         * {
             margin: 0;
@@ -84,7 +84,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>DeepAssistant</h1>
+        <h1>DipSync</h1>
     </div>
 
     <div class="description">
@@ -105,6 +105,43 @@
         <p>Payment will be charged to your iTunes account upon confirmation of purchase. Your iTunes account will automatically renew and be charged unless auto-renew is turned off at least 24 hours before the end of the current subscription period (including any free trial). Users can manage subscriptions and turn off auto-renewal in their iTunes account settings after purchase.</p>
     </div>
 
+    <div class="support-section">
+        <h2>Support & Help</h2>
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>How to start using DipSync?</h4>
+                <p>After downloading and installing the app, simply click the Start Chat button to begin chatting with the AI assistant. New users can try some features for free.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How to subscribe?</h4>
+                <p>You can choose weekly ($6.99/week) or yearly ($39.99/year) subscription in the app. After subscribing, you can enjoy unlimited conversations.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How to cancel subscription?</h4>
+                <p>You can manage subscriptions in your iOS device settings. Go to Settings > [Your Name] > Subscriptions, find DipSync and manage or cancel your subscription.</p>
+            </div>
+        </div>
+        
+        <div class="contact-support">
+            <h3>Contact Us</h3>
+            <p>If you encounter any issues or need help, you can reach us through:</p>
+            <ul>
+                <li>Email: pagf398@163.com</li>
+                <li>Support Hours: Monday-Friday 9:00-18:00 (GMT+8)</li>
+            </ul>
+            <p>We commit to responding to all support requests within 24 hours.</p>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <textarea id="feedbackContent" placeholder="Please enter your feedback or suggestions..." rows="4"></textarea>
+            <button id="submitFeedback" onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+
     <div class="footer">
         <p>Our Terms of Service and Privacy Policy:</p>
         <p>
@@ -112,5 +149,104 @@
             <a href="deepPrivacy.html">Privacy Policy</a>
         </p>
     </div>
+
+    <script>
+    function submitFeedback() {
+        var content = document.getElementById('feedbackContent').value;
+        if (!content.trim()) {
+            alert('Please enter your feedback');
+            return;
+        }
+        
+        // 显示提交中状态
+        var button = document.getElementById('submitFeedback');
+        var originalText = button.innerText;
+        button.disabled = true;
+        button.innerText = 'Submitting...';
+        
+        // 模拟提交过程
+        setTimeout(function() {
+            alert('Thank you for your feedback! We will process it carefully.');
+            document.getElementById('feedbackContent').value = '';
+            button.disabled = false;
+            button.innerText = originalText;
+        }, 1500);
+    }
+    </script>
+
+    <style>
+        .feedback-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        .feedback-form button {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form button:hover {
+            background-color: #0052a3;
+        }
+
+        .feedback-form button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .support-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .contact-support {
+            margin-top: 30px;
+        }
+
+        .contact-support ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+
+        .contact-support li {
+            margin-bottom: 10px;
+        }
+    </style>
 </body>
 </html>
