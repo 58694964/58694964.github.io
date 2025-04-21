@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   swcMinify: true,
   images: {
     domains: [],
+    unoptimized: true,
   },
+  output: 'export',
 };
 
 export default nextConfig;
