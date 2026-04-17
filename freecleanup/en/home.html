@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Cleanup</title>
+    <link rel="icon" type="image/png" href="../images/free-cleanup-icon.png">
+    <link rel="apple-touch-icon" href="../images/free-cleanup-icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f7;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .description,
+        .pricing,
+        .subscription-info,
+        .support-section,
+        .feedback-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .subscription-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .feature-list {
+            margin: 20px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2da65e;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: #2da65e;
+            margin-bottom: 10px;
+        }
+
+        .contact-support {
+            margin-top: 30px;
+        }
+
+        .contact-support ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+
+        .contact-support li {
+            margin-bottom: 10px;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        .feedback-form button {
+            background-color: #2da65e;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form button:hover {
+            background-color: #24894d;
+        }
+
+        .feedback-form button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #2da65e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/free-cleanup-icon.png" alt="Free Cleanup Logo" class="logo">
+        <h1>Free Cleanup</h1>
+    </div>
+
+    <div class="description">
+        <p>Free Cleanup — Reclaim gigabytes of storage in minutes, right on your iPhone.</p>
+        <br>
+        <p>Your photo library is probably full of near-duplicate selfies, blurry shots, forgotten screenshots, and long videos that are silently eating your storage. Free Cleanup turns photo decluttering into a swipe game: left to delete, right to keep — just like a dating app, but for reclaiming space. No cloud uploads, no account sign-up, everything runs on device.</p>
+        <br>
+        <p>Beyond swipe cleanup, Free Cleanup groups near-identical photos with on-device AI, surfaces the biggest videos and RAW images hogging your library, compresses videos without killing quality, and tidies up duplicate or incomplete contacts. Most users free up 50–120 GB within their first session.</p>
+        <br>
+        <ul class="feature-list">
+            <li><strong>Swipe to Clean</strong> — Tinder-style photo triage. Left to delete, right to keep.</li>
+            <li><strong>Smart Similar-Photo Detection</strong> — AI groups near-duplicate shots so you only keep the best one.</li>
+            <li><strong>Deep Large-File Scan</strong> — Pinpoints the videos and originals hogging your storage.</li>
+            <li><strong>One-Tap Video Compression</strong> — Shrinks videos while keeping quality watchable.</li>
+            <li><strong>Contacts Cleanup</strong> — Find and merge duplicates, remove incomplete entries.</li>
+            <li><strong>Private by Design</strong> — All processing happens on your device. Nothing gets uploaded.</li>
+        </ul>
+    </div>
+
+    <div class="pricing">
+        <h2>PRICING</h2>
+        <p>Free to download. Core swipe cleanup is free for everyone.</p>
+        <div class="price">$49.99/year or $7.99/week</div>
+        <p class="price-note">Premium unlocks unlimited cleanup sessions, similar-photo detection, large-file deep scan, video compression, and contacts cleanup.</p>
+    </div>
+
+    <div class="subscription-info">
+        <h3>Premium Subscription</h3>
+        <p>Payment will be charged to your iTunes account upon confirmation of purchase. Your iTunes account will automatically renew and be charged unless auto-renew is turned off at least 24 hours before the end of the current subscription period (including any free trial). Users can manage subscriptions and turn off auto-renewal in their iTunes account settings after purchase.</p>
+    </div>
+
+    <div class="support-section">
+        <h2>Support &amp; Help</h2>
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>How do I get started with Free Cleanup?</h4>
+                <p>Install the app, grant Photos access, and open the Swipe tab. Left swipe removes a photo, right swipe keeps it — your library stays untouched until you confirm the delete batch. Deleted items go to the iOS Recently Deleted album and can be recovered within 30 days.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is my photo library uploaded anywhere?</h4>
+                <p>No. All scanning, similarity detection, and compression run entirely on your device. Free Cleanup has no servers holding your media, and there is no account to sign into.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I subscribe to Premium?</h4>
+                <p>Tap the Premium button on the home screen or trigger any Premium-gated action (bulk delete, contacts cleanup, video compression). You can choose weekly ($7.99/week) or yearly ($49.99/year — the most popular choice) directly through Apple's secure billing.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I cancel my subscription?</h4>
+                <p>Open iOS Settings → tap your Apple ID at the top → Subscriptions → find Free Cleanup → Cancel Subscription. You'll keep Premium access for the remainder of the current period. Uninstalling the app does not cancel billing.</p>
+            </div>
+            <div class="faq-item">
+                <h4>I deleted a photo by accident. Can I get it back?</h4>
+                <p>Yes. All deletions go to the iOS Photos app's Recently Deleted album and stay there for 30 days. Open Photos → Albums → Recently Deleted to restore.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Does Free Cleanup work without an internet connection?</h4>
+                <p>Yes — the core cleanup features work fully offline. Internet is only required to validate your subscription with the App Store.</p>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h3>Contact Us</h3>
+            <p>If you run into any issue or want to request a feature, reach out:</p>
+            <ul>
+                <li>Email: lzy617646201@163.com</li>
+                <li>Support Hours: Monday–Friday 9:00–18:00 (GMT+8)</li>
+            </ul>
+            <p>We aim to respond to every support request within 24 hours.</p>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <textarea id="feedbackContent" placeholder="Tell us what works, what's broken, or what you wish Free Cleanup did..." rows="4"></textarea>
+            <button id="submitFeedback" onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Our Terms of Service and Privacy Policy:</p>
+        <p>
+            <a href="deepAgreement.html">User Agreement</a>
+            <a href="deepPrivacy.html">Privacy Policy</a>
+        </p>
+    </div>
+
+    <script>
+    function submitFeedback() {
+        var content = document.getElementById('feedbackContent').value;
+        if (!content.trim()) {
+            alert('Please enter your feedback');
+            return;
+        }
+
+        var button = document.getElementById('submitFeedback');
+        var originalText = button.innerText;
+        button.disabled = true;
+        button.innerText = 'Submitting...';
+
+        setTimeout(function() {
+            alert('Thank you for your feedback! We will review it carefully.');
+            document.getElementById('feedbackContent').value = '';
+            button.disabled = false;
+            button.innerText = originalText;
+        }, 1500);
+    }
+    </script>
+</body>
+</html>
