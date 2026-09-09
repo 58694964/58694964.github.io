@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut Alarm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f7;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: #1a1a1a;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .description,
+        .pricing,
+        .support-section,
+        .feedback-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin: 12px 0;
+            padding-left: 22px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #568214;
+        }
+
+        .price {
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #568214;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: #568214;
+            margin-bottom: 10px;
+        }
+
+        .contact-support {
+            margin-top: 30px;
+        }
+
+        .contact-support ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+
+        .contact-support li {
+            margin-bottom: 10px;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        .feedback-form button {
+            background-color: #568214;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form button:hover {
+            background-color: #446810;
+        }
+
+        .feedback-form button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #568214;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/shortcut-alarm-icon.png" alt="Shortcut Alarm Logo" class="logo">
+        <h1>Shortcut Alarm</h1>
+    </div>
+
+    <div class="description">
+        <p>Shortcut Alarm — an alarm that checks the real world before it wakes you.</p>
+        <br>
+        <p>A normal alarm only knows what time it is. Shortcut Alarm also knows whether it is raining, how cold it is outside, how strong the UV is, and whether you have just arrived home or left the office. You attach conditions to an alarm, and the alarm decides what to do with them: ring only when the condition holds, stay quiet when it holds, or shift itself earlier or later by a few minutes.</p>
+        <br>
+        <p>"Wake me 20 minutes early, but only on rainy mornings." "Remind me to bring the laundry in when I get home." "Skip the 6:30 run alarm when it is below freezing." Each one is a single alarm, not a workflow you have to maintain. Everything is stored on your device — there is no account to create and nothing to sign into.</p>
+        <br>
+        <ul class="feature-list">
+            <li><strong>Two ways to fire</strong> — a time alarm, or a geofence alarm that triggers when you enter or leave a place.</li>
+            <li><strong>Five conditions</strong> — time range, location, weather, temperature, and UV index. Combine them with AND / OR.</li>
+            <li><strong>Four reminder modes</strong> — ring only when matched, stay silent when matched, or move the alarm earlier or later by 1–60 minutes.</li>
+            <li><strong>Skip public holidays</strong> — a weekday alarm that follows the official calendar, including make-up workdays.</li>
+            <li><strong>Real system alarms</strong> — built on the iOS alarm framework, so it rings through silent mode and Focus like the built-in Clock does.</li>
+            <li><strong>Your own sounds</strong> — the built-in tones, silence, or any song from your music library.</li>
+            <li><strong>Nothing leaves your phone</strong> — no account, no analytics, no ads, no servers of ours.</li>
+        </ul>
+    </div>
+
+    <div class="pricing">
+        <h2>PRICING</h2>
+        <p>Free to download. Every feature is included.</p>
+        <div class="price">Free</div>
+        <p class="price-note">No subscription, no in-app purchases, no advertising.</p>
+    </div>
+
+    <div class="support-section">
+        <h2>Support &amp; Help</h2>
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>How is this different from the built-in Clock app?</h4>
+                <p>The Clock app rings at a time. Shortcut Alarm rings at a time <em>if</em> something is true — or because you arrived somewhere. You pick a trigger (a time, or entering/leaving a place), optionally attach conditions such as weather or temperature, and choose whether a matching condition should make the alarm ring, stay quiet, or move earlier or later.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Why does it ask for "Always" location access?</h4>
+                <p>A geofence alarm has to notice that you crossed a boundary even when the app is closed, and iOS only delivers those events to apps with "Always" access. Weather and temperature conditions also need a location to look up a forecast for. If you grant "While Using the App" instead, the app still works, but geofence alarms and background condition checks become unreliable — the app tells you so on the screens that need it.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Does my location leave the device?</h4>
+                <p>Only as a coordinate sent to Apple's weather service to fetch a forecast, and only for alarms that actually use a weather, temperature, or UV condition. It is not stored anywhere outside your phone, and it never reaches us — we do not operate a server.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Does it work without an internet connection?</h4>
+                <p>Time alarms, geofence alarms, and the time and location conditions all work offline. Weather, temperature, and UV conditions need a network connection to fetch a forecast. When the forecast cannot be retrieved, the alarm is not scheduled for that cycle rather than guessing.</p>
+            </div>
+            <div class="faq-item">
+                <h4>My alarm did not ring. What happened?</h4>
+                <p>Most often the condition simply did not hold — that is the point of the app. Open the alarm and check its reminder mode: "Ring" means it fires <em>only</em> when the condition matches, and "Don't ring" means it stays silent when the condition matches. Also check that the alarm is switched on, that Location is set to "Always", and that the alarm permission is still granted in iOS Settings.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I use my own music as the alarm sound?</h4>
+                <p>Yes. Pick any song from your music library, or choose one of the built-in tones or silence. Imported songs are shared across all your alarms. Only a reference to the track is saved — the audio itself stays in your music library.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Where does the weather data come from?</h4>
+                <p>From the weather service built into iOS. The app reads the forecast for the moment the alarm is due, maps it onto nine plain categories (clear, cloudy, rain, snow, fog, haze, wind, thunder, hail), and never edits or translates the underlying data.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I delete my data?</h4>
+                <p>Delete the alarm, or delete the app. Everything Shortcut Alarm stores lives in the app's own sandbox on your device, so removing the app removes all of it. There is no account and no backup on our side to clean up.</p>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h3>Contact Us</h3>
+            <p>If you run into any issue or want to request a feature, reach out:</p>
+            <ul>
+                <li>Email: 617646201lzy@gmail.com</li>
+                <li>Support Hours: Monday–Friday 9:00–18:00 (GMT+8)</li>
+            </ul>
+            <p>We aim to respond to every support request within 24 hours.</p>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <textarea id="feedbackContent" placeholder="Tell us what works, what's broken, or what you wish Shortcut Alarm did..." rows="4"></textarea>
+            <button id="submitFeedback" onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Our Terms of Service and Privacy Policy:</p>
+        <p>
+            <a href="deepAgreement.html">User Agreement</a>
+            <a href="deepPrivacy.html">Privacy Policy</a>
+        </p>
+    </div>
+
+    <script>
+    function submitFeedback() {
+        var content = document.getElementById('feedbackContent').value;
+        if (!content.trim()) {
+            alert('Please enter your feedback');
+            return;
+        }
+
+        var button = document.getElementById('submitFeedback');
+        var originalText = button.innerText;
+        button.disabled = true;
+        button.innerText = 'Submitting...';
+
+        setTimeout(function() {
+            alert('Thank you for your feedback! We will review it carefully.');
+            document.getElementById('feedbackContent').value = '';
+            button.disabled = false;
+            button.innerText = originalText;
+        }, 1500);
+    }
+    </script>
+</body>
+</html>
