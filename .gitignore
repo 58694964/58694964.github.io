@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Claude Code 的本地权限缓存，跟人不跟项目
+.claude/
