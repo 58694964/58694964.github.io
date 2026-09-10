@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指令闹钟</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f7;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: #1a1a1a;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .description,
+        .pricing,
+        .support-section,
+        .feedback-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin: 12px 0;
+            padding-left: 22px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #568214;
+        }
+
+        .price {
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #568214;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: #568214;
+            margin-bottom: 10px;
+        }
+
+        .contact-support {
+            margin-top: 30px;
+        }
+
+        .contact-support ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 15px 0;
+        }
+
+        .contact-support li {
+            margin-bottom: 10px;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        .feedback-form button {
+            background-color: #568214;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form button:hover {
+            background-color: #446810;
+        }
+
+        .feedback-form button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #568214;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/shortcut-alarm-icon.png" alt="指令闹钟 Logo" class="logo">
+        <h1>指令闹钟</h1>
+    </div>
+
+    <div class="description">
+        <p>指令闹钟 —— 一个会先看看现实世界、再决定要不要叫你的闹钟。</p>
+        <br>
+        <p>普通闹钟只知道现在几点。指令闹钟还知道外面下没下雨、有多冷、紫外线多强，以及你是刚到家还是刚离开公司。你给闹钟挂上条件，闹钟自己决定怎么处理：条件成立才响、条件成立反而不响，或者提前、延后几分钟再响。</p>
+        <br>
+        <p>「下雨的早上提前 20 分钟叫我」「到家提醒我收衣服」「零度以下就别叫我去跑步」——每一条都是一个闹钟，不是一套需要你维护的流程。所有数据都存在你自己的设备上，不用注册，也没有账号可登。</p>
+        <br>
+        <ul class="feature-list">
+            <li><strong>两种唤起方式</strong> —— 时间闹钟，或者进入 / 离开某个地方时触发的地理围栏闹钟。</li>
+            <li><strong>五种条件</strong> —— 时间区间、位置、天气、温度、紫外线，之间可以用「全部满足」或「任一满足」组合。</li>
+            <li><strong>四种提醒方式</strong> —— 满足才响、满足反而不响，或者提前 / 延后 1–60 分钟。</li>
+            <li><strong>跳过节假日</strong> —— 按星期重复的闹钟跟着国家工作日历走，调休补班的那个周六照响。</li>
+            <li><strong>真正的系统闹钟</strong> —— 基于 iOS 的闹钟框架，和系统时钟一样能穿透静音与专注模式。</li>
+            <li><strong>用你自己的声音</strong> —— 内置铃声、静音，或者音乐库里的任意一首歌。</li>
+            <li><strong>数据不出手机</strong> —— 没有账号、没有统计、没有广告，我们也没有服务器。</li>
+        </ul>
+    </div>
+
+    <div class="pricing">
+        <h2>价格</h2>
+        <p>免费下载。免费版可建 3 条闹钟，并且所有条件都对你开放，先用过再决定。</p>
+        <div class="price">免费，Pro 可选</div>
+        <p class="price-note">Pro 解除闹钟数量上限，并解锁天气、温度、紫外线三种条件。可选按月订阅、按年订阅，或一次性买断。具体价格在应用内购买前显示。任何版本都不含广告。</p>
+    </div>
+
+    <div class="support-section">
+        <h2>支持与帮助</h2>
+        <div class="faq">
+            <h3>常见问题</h3>
+            <div class="faq-item">
+                <h4>和系统自带的「时钟」有什么区别？</h4>
+                <p>时钟到点就响。指令闹钟是到点<em>并且</em>某件事成立才响，或者因为你到了某个地方才响。你先选一个唤起方式（一个时刻，或者进入 / 离开某地），再挂上天气、温度这类条件，最后决定条件成立时是该响、该安静，还是该提前或延后。</p>
+            </div>
+            <div class="faq-item">
+                <h4>为什么要「始终」访问位置？</h4>
+                <p>地理围栏闹钟必须在 app 已经关掉的情况下也能察觉你越过了边界，而 iOS 只把这类事件投递给拿到「始终」权限的应用。天气和温度条件也需要一个位置才能查预报。如果你只给「使用期间」，app 仍然能用，但地理围栏闹钟和后台条件判断会变得不可靠——app 会在相关页面上直接告诉你这一点。</p>
+            </div>
+            <div class="faq-item">
+                <h4>我的位置会离开设备吗？</h4>
+                <p>只有一种情况：把一个坐标发给苹果的天气服务去换预报，而且仅限真正用到了天气、温度或紫外线条件的闹钟。这个坐标不会保存在你手机之外的任何地方，也永远到不了我们手里——我们没有服务器。</p>
+            </div>
+            <div class="faq-item">
+                <h4>没有网络能用吗？</h4>
+                <p>时间闹钟、地理围栏闹钟，以及时间和位置这两个条件，都能离线工作。天气、温度、紫外线条件需要联网取预报。取不到预报时，这一轮就不排这条闹钟，而不是靠猜。</p>
+            </div>
+            <div class="faq-item">
+                <h4>闹钟没响，怎么回事？</h4>
+                <p>最常见的情况是条件本来就没成立——这正是这个 app 的用途。打开那条闹钟看看它的提醒方式：「提醒」表示<em>只在</em>条件成立时才响，「不提醒」表示条件成立时反而安静。另外也确认一下闹钟开关是开着的、定位仍然是「始终」、闹钟权限没有在系统设置里被收回。</p>
+            </div>
+            <div class="faq-item">
+                <h4>可以用自己的歌当铃声吗？</h4>
+                <p>可以。从音乐库里挑任意一首，也可以用内置铃声或者静音。导入的曲目所有闹钟共用。我们只保存一个指向这首曲子的引用，音频本身始终留在你的音乐库里。</p>
+            </div>
+            <div class="faq-item">
+                <h4>天气数据是哪来的？</h4>
+                <p>来自 iOS 内置的天气服务。app 读取闹钟计划触发那一刻的预报，归并成九个通俗类别（晴天、多云、下雨、下雪、雾、霾、刮风、雷电、冰雹），不对原始数据做任何加工或翻译。</p>
+            </div>
+            <div class="faq-item">
+                <h4>怎么删掉我的数据？</h4>
+                <p>删掉那条闹钟，或者删掉这个 app。指令闹钟存的所有东西都在设备上它自己的沙盒里，卸载即全部消失。没有账号，我们这边也没有任何备份需要清理。</p>
+            </div>
+        </div>
+
+        <div class="contact-support">
+            <h3>联系我们</h3>
+            <p>遇到问题或者想提需求，欢迎联系：</p>
+            <ul>
+                <li>邮箱：617646201lzy@gmail.com</li>
+                <li>支持时间：周一至周五 9:00–18:00（GMT+8）</li>
+            </ul>
+            <p>我们会尽量在 24 小时内回复每一条反馈。</p>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <h2>意见反馈</h2>
+        <div class="feedback-form">
+            <textarea id="feedbackContent" placeholder="告诉我们哪里好用、哪里有问题，或者你希望指令闹钟能做什么……" rows="4"></textarea>
+            <button id="submitFeedback" onclick="submitFeedback()">提交</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>我们的服务条款与隐私政策：</p>
+        <p>
+            <a href="deepAgreement.html">用户协议</a>
+            <a href="deepPrivacy.html">隐私政策</a>
+        </p>
+    </div>
+
+    <script>
+    function submitFeedback() {
+        var content = document.getElementById('feedbackContent').value;
+        if (!content.trim()) {
+            alert('请先输入反馈内容');
+            return;
+        }
+
+        var button = document.getElementById('submitFeedback');
+        var originalText = button.innerText;
+        button.disabled = true;
+        button.innerText = '提交中…';
+
+        setTimeout(function() {
+            alert('感谢反馈！我们会认真查看。');
+            document.getElementById('feedbackContent').value = '';
+            button.disabled = false;
+            button.innerText = originalText;
+        }, 1500);
+    }
+    </script>
+</body>
+</html>
