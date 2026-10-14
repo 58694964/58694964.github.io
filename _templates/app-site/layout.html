@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="$description">
+  <meta name="color-scheme" content="light">
+  <title>$title</title>
+  <link rel="canonical" href="$canonical">
+  <link rel="alternate" hreflang="en" href="$alternate_en">
+  <link rel="alternate" hreflang="zh-CN" href="$alternate_zh">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>$css</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">$skip_label</a>
+  <nav class="topbar" aria-label="$navigation_label">
+    <a class="brand" href="index.html"><bdi>$app_name</bdi></a>
+    <div class="languages" aria-label="$language_label">$language_links</div>
+  </nav>
+  $content
+  <footer class="footer">
+    <nav aria-label="$footer_label">$footer_links</nav>
+    <p><a href="mailto:$email">$email</a></p>
+    <p class="copyright">© $year <bdi>$app_name</bdi></p>
+  </footer>
+</body>
+</html>
