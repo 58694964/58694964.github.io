@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basic and scientific calculations, currency conversion, memory and history. Calculator√ for iPhone: free, without ads or an account.">
+  <meta name="color-scheme" content="light">
+  <title>App Home — Calculator√</title>
+  <link rel="canonical" href="https://58694964.github.io/calculator/en/index.html">
+  <link rel="alternate" hreflang="en" href="https://58694964.github.io/calculator/en/index.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://58694964.github.io/calculator/zh/index.html">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>/* Shared layout based on shortcutalarm's existing public pages. */
+:root{--background:#f5f5f7;--surface:#fff;--ink:#333;--heading:#1a1a1a;--muted:#626268;--accent:#0f766e;--summary:#eff8f6;--border:#d9dfdf;--radius:15px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;color:var(--ink);max-width:1200px;margin:0 auto;padding:20px;background:var(--background);overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:20px;top:-100px;padding:10px 16px;background:var(--surface);z-index:2}
+.skip-link:focus{top:12px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;color:var(--heading);text-decoration:none;padding-block:10px}
+.languages{display:flex;gap:8px;align-items:center}
+.languages a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:6px 12px;text-decoration:none;border-radius:8px}
+.languages a[aria-current]{color:var(--heading);background:var(--surface);font-weight:600;box-shadow:0 1px 3px #00000012}
+.header{text-align:center;padding:40px 0}
+.app-header{display:flex;align-items:center;justify-content:center;gap:20px}
+.logo{width:80px;height:80px;object-fit:contain;border-radius:15px;flex-shrink:0}
+h1{font-size:2.5rem;line-height:1.25;color:var(--heading);font-weight:700}
+h2{font-size:1.5rem;line-height:1.4;color:var(--heading);margin-block:0 20px}
+h3{font-size:1.2rem;line-height:1.45;color:var(--heading);margin-block:24px 10px}
+h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+p{margin-bottom:15px}
+p:last-child{margin-bottom:0}
+.meta time{white-space:nowrap}
+.meta{color:var(--muted);font-size:.95rem}
+.app-header .meta{margin-top:10px}
+.card{background:var(--surface);padding:40px;border-radius:var(--radius);box-shadow:0 4px 6px #0000001a;margin-bottom:30px}
+.feature-list{list-style:none;margin-top:22px}
+.feature-list li{margin-block:14px;padding-inline-start:22px;position:relative}
+.feature-list li::before{content:"";position:absolute;inset-inline-start:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.price{font-size:1.6rem;font-weight:600;color:var(--accent);margin-block:10px}
+.faq-item{margin-block:22px}
+.contact-support{border-top:1px solid var(--border);padding-top:8px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.contact-button:hover{background:#115e59;text-decoration:none}
+.contact-button:active{transform:translateY(1px)}
+.contact-address{margin-top:12px}
+.document-header{padding-bottom:30px}
+.summary{background:var(--summary);border-inline-start:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-block:20px 30px}
+.toc{background:#f8f9fa;padding:20px 24px;border-radius:10px;margin-bottom:30px}
+.toc h2{font-size:1.1rem;margin-bottom:12px}
+ol,ul{padding-inline-start:24px}
+.toc li{margin-block:8px}
+.document section{margin-top:30px}
+.document section h2{margin-bottom:15px}
+.document section li{margin-bottom:8px}
+.document ul{margin-bottom:15px}
+.back-link{display:inline-flex;align-items:center;min-height:44px;margin-top:24px}
+.footer{text-align:center;padding:20px;font-size:.95rem;color:var(--muted)}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin-bottom:12px}
+.footer nav a{display:inline-flex;align-items:center;min-height:44px}
+.footer nav a[aria-current]{color:var(--heading);font-weight:600;text-decoration:none}
+.copyright{font-size:.85rem}
+@media(max-width:600px){body{padding:16px}.header{padding-block:30px}.app-header{flex-direction:column;gap:16px}h1{font-size:2rem}h2{font-size:1.3rem}.card{padding:24px;margin-bottom:20px}.summary,.toc{padding:18px}.footer{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.contact-button:active{transform:none}}
+@media print{body{background:white;max-width:none;padding:0;color:black}.topbar,.skip-link,.footer,.back-link,.contact-button{display:none}.card{box-shadow:none;padding:0}.header{padding:0 0 24px}.summary{border-color:#555}.document section{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="topbar" aria-label="Site navigation">
+    <a class="brand" href="index.html"><bdi>Calculator√</bdi></a>
+    <div class="languages" aria-label="Language"><a lang="en" hreflang="en" href="../en/index.html" aria-current="page">English</a><a lang="zh-CN" hreflang="zh-CN" href="../zh/index.html">中文</a></div>
+  </nav>
+  <header class="header app-header">
+  <img src="../images/app-icon.png" width="80" height="80" alt="Calculator√ app icon" class="logo">
+  <div><h1><bdi>Calculator√</bdi></h1><p class="meta">iPhone · iOS 26 or later</p></div>
+</header>
+<main id="main">
+  <section class="card description" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">Everyday calculations. Scientific functions. Currency conversion.</h2>
+    <p><bdi>Calculator√</bdi> brings basic and scientific calculation together with currency conversion. Switch between them while keeping your current expression, and return to your previous work when you reopen the app.</p>
+<p>Keep useful values in memory, find earlier calculations in history, and choose the number format that suits you. No account, advertisements or subscription.</p>
+    <ul class="feature-list"><li><strong>Basic and scientific</strong> — Use arithmetic, percentages, powers, roots, logarithms and trigonometric functions, with degrees or radians.</li>
+<li><strong>Currency conversion</strong> — Calculate in either currency row, swap the pair, search currencies and keep favorites. Downloaded rates remain available when a refresh fails. BTC is optional and available when it has a valid quote or cached quote.</li>
+<li><strong>Two separate memories</strong> — Use independent cards in the global memory library, alongside a separate scientific memory.</li>
+<li><strong>History you can use again</strong> — Restore a calculation, add a note or tag, mark favorites, search and filter, or export a record or the current matching results as CSV.</li>
+<li><strong>Your preferred display</strong> — Choose Ocean, Blossom or Dusk, light or dark appearance, decimal precision, separators, sounds and haptics.</li>
+<li><strong>App languages</strong> — Supports languages including English and Arabic. See the app for available languages. Arabic interface layout and numeral options keep mathematical expressions and keypad order consistent.</li>
+<li><strong>Local calculation data</strong> — Expressions, history, notes, tags, memory and settings are stored on your device. Only share or export them when you choose.</li></ul>
+  </section>
+  <section class="card pricing" aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading">Pricing</h2>
+    <p class="price">Free. No ads. No subscription.</p>
+    <p>The current app has no in-app purchases, paid feature tiers or account requirement.</p>
+  </section>
+  <section class="card support-section" aria-labelledby="support-heading">
+    <h2 id="support-heading">Support &amp; Help</h2>
+    <h3>Frequently asked questions</h3>
+    <div class="faq-item"><h4>Does it work offline?</h4><p>Basic and scientific calculation, memory and local history work offline. Currency conversion needs a previously downloaded quote; without one, the unavailable conversion is not presented as a valid amount.</p></div>
+<div class="faq-item"><h4>Where do the exchange rates come from?</h4><p>Fiat rates use <a href="https://frankfurter.dev/">Frankfurter</a>, with <a href="https://www.exchangerate-api.com/terms">ExchangeRate-API</a> as a fallback. BTC reference prices use <a href="https://www.yadio.io/terms.html">Yadio</a> independently. These are reference rates, not bank or exchange execution prices.</p></div>
+<div class="faq-item"><h4>How often do rates refresh?</h4><p>On launch, the app checks whether at least 12 hours have passed since a successful fiat refresh. Entering BTC conversion checks its separate five-minute interval. Manual refresh bypasses these intervals, and a failed refresh retains the saved quotes.</p></div>
+<div class="faq-item"><h4>Does changing decimal precision change the calculation?</h4><p>No. Decimal and number-format settings change presentation, not the underlying calculation value. Copied or exported text reflects the displayed precision. Some scientific results and currency conversions are approximate.</p></div>
+<div class="faq-item"><h4>Can I edit and reuse earlier work?</h4><p>Move the cursor or select an operator in ordinary-number expressions. Currency input is edited at the end. History can restore a calculation; currency calculations then continue using the latest locally available rates, while the history card keeps its original snapshot.</p></div>
+<div class="faq-item"><h4>Why does iOS ask before pasting?</h4><p>Clipboard access happens when you choose Paste. iOS may ask for permission to paste from another app. The app does not monitor your clipboard in the background.</p></div>
+<div class="faq-item"><h4>How can I remove my data?</h4><p>Delete history records and memory cards in the app, or use Delete App in iOS to remove its local storage. Offloading preserves app data. Previously exported files and device backups must be managed separately.</p></div>
+    <div class="contact-support">
+      <h3>Contact us</h3><p>For help or feedback, email us with your app version, iOS version and a description of the issue. Include screenshots only if you are comfortable sharing their contents.</p>
+      <a class="contact-button" href="mailto:617646201lzy@gmail.com?subject=Calculator%E2%88%9A%20%E2%80%94%20Support%20%26%20Help">Email support</a>
+      <p class="meta contact-address">617646201lzy@gmail.com</p>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <nav aria-label="More information"><a href="index.html" aria-current="page">App Home</a><a href="deepPrivacy.html">Privacy Policy</a><a href="deepAgreement.html">User Agreement</a></nav>
+    <p><a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a></p>
+    <p class="copyright">© 2026 <bdi>Calculator√</bdi></p>
+  </footer>
+</body>
+</html>
