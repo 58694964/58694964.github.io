@@ -1,0 +1,8 @@
+# Retired projects remain in Git, but are not published by GitHub Pages.
+# Remove a project's entry below to publish its original URLs again.
+exclude:
+  - shortcutalarm
+  - freecleanup
+  - toddler
+  - deepAgreement.html
+  - deepPrivacy.html
