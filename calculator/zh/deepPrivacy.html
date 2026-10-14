@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解 Calculator√ 如何处理本地计算、主动分享、汇率请求、系统评分和支持邮件。">
+  <meta name="color-scheme" content="light">
+  <title>隐私政策 — Calculator√</title>
+  <link rel="canonical" href="https://58694964.github.io/calculator/zh/deepPrivacy.html">
+  <link rel="alternate" hreflang="en" href="https://58694964.github.io/calculator/en/deepPrivacy.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://58694964.github.io/calculator/zh/deepPrivacy.html">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>/* Shared layout based on shortcutalarm's existing public pages. */
+:root{--background:#f5f5f7;--surface:#fff;--ink:#333;--heading:#1a1a1a;--muted:#626268;--accent:#0f766e;--summary:#eff8f6;--border:#d9dfdf;--radius:15px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;color:var(--ink);max-width:1200px;margin:0 auto;padding:20px;background:var(--background);overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:20px;top:-100px;padding:10px 16px;background:var(--surface);z-index:2}
+.skip-link:focus{top:12px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;color:var(--heading);text-decoration:none;padding-block:10px}
+.languages{display:flex;gap:8px;align-items:center}
+.languages a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:6px 12px;text-decoration:none;border-radius:8px}
+.languages a[aria-current]{color:var(--heading);background:var(--surface);font-weight:600;box-shadow:0 1px 3px #00000012}
+.header{text-align:center;padding:40px 0}
+.app-header{display:flex;align-items:center;justify-content:center;gap:20px}
+.logo{width:80px;height:80px;object-fit:contain;border-radius:15px;flex-shrink:0}
+h1{font-size:2.5rem;line-height:1.25;color:var(--heading);font-weight:700}
+h2{font-size:1.5rem;line-height:1.4;color:var(--heading);margin-block:0 20px}
+h3{font-size:1.2rem;line-height:1.45;color:var(--heading);margin-block:24px 10px}
+h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+p{margin-bottom:15px}
+p:last-child{margin-bottom:0}
+.meta time{white-space:nowrap}
+.meta{color:var(--muted);font-size:.95rem}
+.app-header .meta{margin-top:10px}
+.card{background:var(--surface);padding:40px;border-radius:var(--radius);box-shadow:0 4px 6px #0000001a;margin-bottom:30px}
+.feature-list{list-style:none;margin-top:22px}
+.feature-list li{margin-block:14px;padding-inline-start:22px;position:relative}
+.feature-list li::before{content:"";position:absolute;inset-inline-start:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.price{font-size:1.6rem;font-weight:600;color:var(--accent);margin-block:10px}
+.faq-item{margin-block:22px}
+.contact-support{border-top:1px solid var(--border);padding-top:8px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.contact-button:hover{background:#115e59;text-decoration:none}
+.contact-button:active{transform:translateY(1px)}
+.contact-address{margin-top:12px}
+.document-header{padding-bottom:30px}
+.summary{background:var(--summary);border-inline-start:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-block:20px 30px}
+.toc{background:#f8f9fa;padding:20px 24px;border-radius:10px;margin-bottom:30px}
+.toc h2{font-size:1.1rem;margin-bottom:12px}
+ol,ul{padding-inline-start:24px}
+.toc li{margin-block:8px}
+.document section{margin-top:30px}
+.document section h2{margin-bottom:15px}
+.document section li{margin-bottom:8px}
+.document ul{margin-bottom:15px}
+.back-link{display:inline-flex;align-items:center;min-height:44px;margin-top:24px}
+.footer{text-align:center;padding:20px;font-size:.95rem;color:var(--muted)}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin-bottom:12px}
+.footer nav a{display:inline-flex;align-items:center;min-height:44px}
+.footer nav a[aria-current]{color:var(--heading);font-weight:600;text-decoration:none}
+.copyright{font-size:.85rem}
+@media(max-width:600px){body{padding:16px}.header{padding-block:30px}.app-header{flex-direction:column;gap:16px}h1{font-size:2rem}h2{font-size:1.3rem}.card{padding:24px;margin-bottom:20px}.summary,.toc{padding:18px}.footer{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.contact-button:active{transform:none}}
+@media print{body{background:white;max-width:none;padding:0;color:black}.topbar,.skip-link,.footer,.back-link,.contact-button{display:none}.card{box-shadow:none;padding:0}.header{padding:0 0 24px}.summary{border-color:#555}.document section{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <nav class="topbar" aria-label="网站导航">
+    <a class="brand" href="index.html"><bdi>Calculator√</bdi></a>
+    <div class="languages" aria-label="语言"><a lang="en" hreflang="en" href="../en/deepPrivacy.html">English</a><a lang="zh-CN" hreflang="zh-CN" href="../zh/deepPrivacy.html" aria-current="page">中文</a></div>
+  </nav>
+  <header class="header document-header"><h1>隐私政策</h1></header>
+<main id="main" class="card document">
+  <p class="meta">适用应用： <bdi>Calculator√</bdi> · 生效日期： <time datetime="2026-10-14">2026-10-14</time></p>
+  <div class="summary"><p><bdi>Calculator√</bdi> 在设备上完成计算。我们不运营用于保存你计算历史的服务器，不要求账号，也不接入广告或第三方分析 SDK。汇率请求不附带你的计算内容。</p>
+<p>网络服务商会接收到处理连接所需的信息。如果你联系支持或分享结果，由你决定发送哪些内容。下文分别说明这些情况。</p></div>
+  <nav class="toc" aria-label="目录"><h2>目录</h2><ol><li><a href="#section-1">1. 信息收集范围</a></li>
+<li><a href="#section-2">2. 我们如何获取信息</a></li>
+<li><a href="#section-3">3. 我们如何使用信息</a></li>
+<li><a href="#section-4">4. 第三方共享、转让与公开披露</a></li>
+<li><a href="#section-5">5. 信息如何存储与保护</a></li>
+<li><a href="#section-6">6. 未成年人保护</a></li>
+<li><a href="#section-7">7. 管理你的信息</a></li>
+<li><a href="#section-8">8. 服务内容的变更</a></li>
+<li><a href="#section-9">9. 本隐私政策的查阅与修订</a></li>
+<li><a href="#section-10">10. 联系我们</a></li></ol></nav>
+  <section id="section-1"><h2>1. 1. 信息收集范围</h2><p>应用为提供功能及恢复现场，在本地应用存储中保存：</p>
+<p>我们不会自动上传你的算式、金额、历史、备注、标签或记忆值。应用没有账号、广告标识符、广告 SDK、第三方分析 SDK 或第三方崩溃上报 SDK。应用不请求定位、通讯录、照片、相机、麦克风、健康数据或音乐访问权限。读取系统地区以选择初始币种，不等于获取你的位置。</p><ul><li>当前算式、结果、计算模式、角度单位、币对和输入方向。</li><li>计算历史、当时的货币报价快照、收藏、备注、标签、全局记忆卡片和科学记忆。</li><li>外观、语言、数字字符、分隔符、小数精度、声音、触觉和常用币种偏好。</li><li>缓存汇率、供应商标识，以及请求时间、报价时间和最近成功刷新时间。</li><li>成功计算的本地计数和上次系统评分请求时间，仅用于控制评分弹窗频率。</li></ul></section>
+<section id="section-2"><h2>2. 2. 我们如何获取信息</h2><p>只有你明确选择“粘贴”时，应用才读取剪贴板文字；跨应用粘贴的权限提示由 iOS 管理。文字在本地处理，不发给开发者或汇率服务。</p>
+<p>“复制”将所选文字写入系统剪贴板。分享和 CSV 导出使用系统分享界面；你选择的接收方、应用或存储位置可能获得相应内容，并按其自己的规则处理。我们不会自动替你选定接收人或发送记录。分享流程完成后会移除临时导出文件，iOS 也会管理临时存储。</p></section>
+<section id="section-3"><h2>3. 3. 我们如何使用信息</h2><p>本地信息仅用于计算、恢复输入现场、管理历史与记忆、应用偏好及控制系统评分请求频率。汇率请求仅用于取得参考报价。我们不将这些信息用于广告、用户画像或出售。</p></section>
+<section id="section-4"><h2>4. 4. 第三方共享、转让与公开披露</h2><p>应用通过 HTTPS 连接 <a href="https://frankfurter.dev/">Frankfurter</a> 获取法币报价，使用 <a href="https://www.exchangerate-api.com/terms">ExchangeRate-API</a> 作为备用，并通过 <a href="https://www.yadio.io/terms.html">Yadio</a> 获取可选 BTC 报价。请求的是参考报价表，不附带你的金额、算式、备注、标签、历史、剪贴板文字或应用自行生成的用户标识。</p>
+<p>建立网络连接会使接收服务及其基础设施获得处理连接所需的信息，例如 IP 地址和技术请求头。是否记录、保存这些信息，由各服务商的实际政策决定。Frankfurter 在文档中说明其隐私规则；ExchangeRate-API 的条款页面包含隐私政策；Yadio 提供其服务条款。</p>
+<p>报价及刷新元数据保存在本地，更新失败保留已有缓存。第三方基础设施可能在你所在国家或地区以外处理请求。我们不运营这些汇率服务，也不能控制它们的信息保存规则。</p>
+<p>应用下载、更新、系统评分，以及你通过 iOS 设置选择分享的诊断，由 <a href="https://www.apple.com/legal/privacy/">Apple</a> 按其设置和政策处理。应用可能在使用后请求系统原生评分界面；用于限频的计数和时间保存在本地。应用无法判断你评了几星、是否提交评价或弹窗是否显示。公开的 App Store 评价可能被开发者及其他人查看。</p>
+<p>本静态网站由 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> 的 GitHub Pages 托管。网页不另加分析脚本、广告追踪器、Cookie 或反馈提交后台。GitHub 可能按其隐私声明处理连接技术信息；点击外部链接或发送邮件后，相关操作由目的服务处理。</p></section>
+<section id="section-5"><h2>5. 5. 信息如何存储与保护</h2><p>本地记录会保留到你主动删除、替换相关数据，或在 iOS 中选择“删除 App”。“卸载 App”通常保留数据。本地存储使用应用沙盒和 iOS 数据保护，汇率请求使用 HTTPS；任何系统都不能承诺绝对安全。</p>
+<p>根据设备备份设置，应用数据可能包含在设备或 iCloud 备份中。备份和已导出文件独立于应用当前存储，需要通过 Apple 或你选择的目的地管理。删除本地历史不会撤回已分享文件。</p>
+<p>你可以修改偏好、删除单条或当前匹配的历史记录、管理标签和记忆卡片，以及导出历史。获取新报价需要网络；离线计算和已缓存报价不需要新请求。</p></section>
+<section id="section-6"><h2>6. 6. 未成年人保护</h2><p>应用是通用计算工具，不要求使用者提供个人信息。我们不会有意向儿童索取个人信息。如果你认为儿童通过支持邮件发送了个人信息，请联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>，我们会核查并处理。</p>
+<p>根据适用法律，你可能对我们实际持有的个人信息享有访问、更正、删除或限制处理等权利。有关支持通信的请求请联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>；本地应用记录由你在设备上管理。</p></section>
+<section id="section-7"><h2>7. 7. 管理你的信息</h2><p>你可以修改偏好、删除单条或当前匹配的历史记录、管理标签和记忆卡片，以及导出历史。获取新报价需要网络；离线计算和已缓存报价不需要新请求。</p>
+<p>请避免发送密码或无关敏感信息。你可以通过邮件请求删除支持通信，我们会结合适用义务处理。我们没有开发者服务器上的本地计算历史副本可供查询或删除。</p>
+<p>根据适用法律，你可能对我们实际持有的个人信息享有访问、更正、删除或限制处理等权利。有关支持通信的请求请联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>；本地应用记录由你在设备上管理。</p></section>
+<section id="section-8"><h2>8. 8. 服务内容的变更</h2><p>如果未来功能需要新增权限或改变信息处理方式，我们会相应更新政策，并在适用法律要求时于相关处理开始前告知你或取得同意。</p></section>
+<section id="section-9"><h2>9. 9. 本隐私政策的查阅与修订</h2><p>当功能或数据处理方式变化时，我们会更新本页及生效日期，并按适用法律要求通知重要变更。对本政策有疑问，请联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>。</p></section>
+<section id="section-10"><h2>10. 10. 联系我们</h2><p>本政策适用于 iPhone 版 <bdi>Calculator√</bdi> 以及相关介绍和支持网页。“我们”指应用开发者，联系邮箱为 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>。内容说明当前实现；第三方服务自己的数据处理遵循下文所链接的政策。</p>
+<p>如果你联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>，我们会收到你主动发送的邮件地址、正文及附件。你的邮件服务商和我们的邮件服务商负责传递。我们仅将这些信息用于回复、排查问题和保留必要沟通，不用于广告。</p>
+<p>请避免发送密码或无关敏感信息。你可以通过邮件请求删除支持通信，我们会结合适用义务处理。我们没有开发者服务器上的本地计算历史副本可供查询或删除。</p></section>
+  <a class="back-link" href="index.html">返回 Calculator√</a>
+</main>
+
+  <footer class="footer">
+    <nav aria-label="更多信息"><a href="index.html">应用主页</a><a href="deepPrivacy.html" aria-current="page">隐私政策</a><a href="deepAgreement.html">用户协议</a></nav>
+    <p><a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a></p>
+    <p class="copyright">© 2026 <bdi>Calculator√</bdi></p>
+  </footer>
+</body>
+</html>
