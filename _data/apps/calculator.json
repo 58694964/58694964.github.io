@@ -126,7 +126,7 @@
         ],
         "sections": [
           {
-            "title": "1. Information covered",
+            "title": "Information covered",
             "paragraphs": [
               "The app stores the following in its local app storage to provide and restore its features:",
               "We do not automatically upload your expressions, amounts, history, notes, tags or memory values. The app has no account, advertising identifier, advertising SDK, third-party analytics SDK or third-party crash-reporting SDK. It does not request access to location, contacts, photos, camera, microphone, health data or music. Reading the system region to choose an initial currency does not read your location."
@@ -140,20 +140,20 @@
             ]
           },
           {
-            "title": "2. How information is obtained",
+            "title": "How information is obtained",
             "paragraphs": [
               "The app reads clipboard text when you explicitly choose Paste. iOS controls any cross-app paste permission. Clipboard text is processed locally and is not sent to the developer or exchange-rate services.",
               "Copy writes the text you choose to the system clipboard. Share and CSV export use the system share interface; a recipient, app or destination you select may receive the exported content and apply its own privacy practices. We do not automatically send exported records to a recipient. Temporary export files are removed after the share flow completes; iOS also manages temporary storage."
             ]
           },
           {
-            "title": "3. How information is used",
+            "title": "How information is used",
             "paragraphs": [
               "Local information is used to calculate, restore input, manage history and memory, apply preferences and limit system review requests. Exchange-rate requests obtain reference quotes. We do not use this information for advertising or profiling, or sell it."
             ]
           },
           {
-            "title": "4. Third-party sharing, transfer and disclosure",
+            "title": "Third-party sharing, transfer and disclosure",
             "paragraphs": [
               "The app connects over HTTPS to [[frankfurter]] for fiat quotes, [[exchangerate]] as fallback, and [[yadio]] for optional BTC quotes. It requests reference rate tables; it does not attach your amount, expression, notes, tags, history, clipboard text or an app-generated user identifier.",
               "A network connection necessarily makes connection information such as your IP address and technical request headers available to the receiving service and its infrastructure. Whether such information is logged or retained depends on the provider’s practices. Frankfurter publishes its privacy information on its documentation page; ExchangeRate-API’s terms include a privacy policy. Yadio publishes its service terms.",
@@ -163,7 +163,7 @@
             ]
           },
           {
-            "title": "5. Storage and protection",
+            "title": "Storage and protection",
             "paragraphs": [
               "Local records remain until you remove them, replace the relevant data, or use Delete App in iOS. Offload App normally retains local data. We use the app sandbox and iOS data protection for local storage, and HTTPS for rate requests; no system can promise absolute security.",
               "Your device backup settings may include app data in a device or iCloud backup. Backups and files you export are separate from the app’s live storage and are managed through Apple or the destination you selected. Deleting local history does not recall a shared file.",
@@ -171,14 +171,14 @@
             ]
           },
           {
-            "title": "6. Protection of minors",
+            "title": "Protection of minors",
             "paragraphs": [
               "The app is a general calculation utility and does not require anyone to submit personal information to use it. We do not knowingly solicit personal information from children. If you believe a child sent personal information through support, contact [[email]] so we can review and address it.",
               "Depending on applicable law, you may have rights to access, correct, delete or restrict personal information we actually hold. Contact [[email]] for requests concerning support correspondence; local app records remain under your control on your device."
             ]
           },
           {
-            "title": "7. Managing your information",
+            "title": "Managing your information",
             "paragraphs": [
               "You can edit preferences, delete individual or matching history records, manage tags and memory cards, and export history. Network access is necessary to fetch fresh quotes; offline calculation and available cached quotes do not require a new rate request.",
               "Please avoid sending passwords or unrelated sensitive information. You may request deletion of support correspondence by email; we will handle the request subject to applicable obligations. There is no developer-hosted copy of your local calculation history to retrieve or delete.",
@@ -186,19 +186,19 @@
             ]
           },
           {
-            "title": "8. Changes to the service",
+            "title": "Changes to the service",
             "paragraphs": [
               "If future features require new permissions or change information handling, we will update this policy and provide notice or obtain consent before that processing where required by applicable law."
             ]
           },
           {
-            "title": "9. Reviewing and updating this policy",
+            "title": "Reviewing and updating this policy",
             "paragraphs": [
               "If features or data handling change, we will update this page and its effective date. Material changes will be communicated as required by applicable law. Contact [[email]] if anything in this policy is unclear."
             ]
           },
           {
-            "title": "10. Contact us",
+            "title": "Contact us",
             "paragraphs": [
               "This policy covers [[app]] for iPhone and these product/support pages. “We” refers to the app developer, who can be contacted at [[email]]. It describes the current implementation; a third-party service’s own handling is governed by its policy linked below.",
               "If you contact [[email]], we receive the email address, message and attachments you choose to send. Your email provider and our email provider handle delivery. We use this information to respond to your request, investigate the issue and maintain necessary correspondence, not for advertising.",
@@ -216,13 +216,13 @@
         ],
         "sections": [
           {
-            "title": "1. Acceptance of this agreement",
+            "title": "Acceptance of this agreement",
             "paragraphs": [
               "This agreement is between you and the developer of [[app]], reachable at [[email]], and covers your use of the app and related support pages. Please read it together with the Privacy Policy. If you do not agree to these terms, do not use the app. Mandatory consumer and privacy rights continue to apply."
             ]
           },
           {
-            "title": "2. Products and services",
+            "title": "Products and services",
             "paragraphs": [
               "The current app is an iPhone utility for iOS 26 or later, offering basic and scientific calculation, currency conversion, independent memories, history and display settings. App languages include English and Arabic; see the app for available languages. These support pages are provided in Chinese and English.",
               "The current version is free, without advertisements, subscriptions, in-app purchases or an account requirement. Basic and scientific calculations and local records work offline. Currency conversion needs an available downloaded quote; fetching new quotes requires network access.",
@@ -230,7 +230,7 @@
             ]
           },
           {
-            "title": "3. Rules of use",
+            "title": "Rules of use",
             "paragraphs": [
               "Subject to these terms and Apple’s applicable terms, you may install and use the app on compatible devices that you own or control. This includes ordinary personal, study and work calculations.",
               "You are responsible for choosing an appropriate angle unit, currency, format and input. Verify results before relying on them for accounting, contracts, engineering, healthcare or other decisions where an error could cause harm. The app is not a substitute for a qualified professional or a certified calculation system.",
@@ -239,19 +239,19 @@
             ]
           },
           {
-            "title": "4. Intellectual property",
+            "title": "Intellectual property",
             "paragraphs": [
               "Do not unlawfully copy or redistribute the app, misrepresent ownership, infringe others’ rights, circumvent security controls or interfere with third-party services. Restrictions on reverse engineering apply only to the extent permitted by applicable law. You retain rights in your own notes, tags and calculation records."
             ]
           },
           {
-            "title": "5. Personal privacy",
+            "title": "Personal privacy",
             "paragraphs": [
               "The Privacy Policy explains third-party network requests, Apple’s system rating flow, support messages and website hosting. These terms do not grant us ownership of your calculation content."
             ]
           },
           {
-            "title": "6. Disclaimers and liability",
+            "title": "Disclaimers and liability",
             "paragraphs": [
               "The app uses finite numerical representations. Scientific functions, some arithmetic and currency conversion may be approximate or outside supported limits. Rounding, displayed decimal places and copied/exported text may differ from the full internal value.",
               "Fiat reference quotes use [[frankfurter]], with [[exchangerate]] as fallback; BTC reference quotes use [[yadio]]. The providers may change their data, coverage or availability. A refresh time indicates retrieval, not necessarily a new market quote.",
@@ -262,19 +262,19 @@
             ]
           },
           {
-            "title": "7. Changes to this agreement",
+            "title": "Changes to this agreement",
             "paragraphs": [
               "We may update this agreement to reflect material feature or legal changes. The current text and effective date will be available here, and required notices or consent will be provided where applicable. If you do not accept a change, you can stop using and delete the app."
             ]
           },
           {
-            "title": "8. Breach of this agreement",
+            "title": "Breach of this agreement",
             "paragraphs": [
               "If you materially misuse the app, we may take measures allowed by applicable law. The app has no user accounts to suspend. You may stop using it at any time; deleting it does not automatically remove exported copies or device backups."
             ]
           },
           {
-            "title": "9. Other provisions",
+            "title": "Other provisions",
             "paragraphs": [
               "Apple’s distribution and usage terms apply independently. If a provision of this agreement is unenforceable, the remaining provisions continue to apply to the extent permitted by law. This agreement does not select a forum or override protections that the law of your place of residence requires.",
               "The Chinese and English pages describe the same service. If a translation appears inconsistent, contact us rather than assuming that it removes a mandatory right. For questions about the app, these terms or support, email [[email]]."
@@ -382,7 +382,7 @@
         ],
         "sections": [
           {
-            "title": "1. 信息收集范围",
+            "title": "信息收集范围",
             "paragraphs": [
               "应用为提供功能及恢复现场，在本地应用存储中保存：",
               "我们不会自动上传你的算式、金额、历史、备注、标签或记忆值。应用没有账号、广告标识符、广告 SDK、第三方分析 SDK 或第三方崩溃上报 SDK。应用不请求定位、通讯录、照片、相机、麦克风、健康数据或音乐访问权限。读取系统地区以选择初始币种，不等于获取你的位置。"
@@ -396,20 +396,20 @@
             ]
           },
           {
-            "title": "2. 我们如何获取信息",
+            "title": "我们如何获取信息",
             "paragraphs": [
               "只有你明确选择“粘贴”时，应用才读取剪贴板文字；跨应用粘贴的权限提示由 iOS 管理。文字在本地处理，不发给开发者或汇率服务。",
               "“复制”将所选文字写入系统剪贴板。分享和 CSV 导出使用系统分享界面；你选择的接收方、应用或存储位置可能获得相应内容，并按其自己的规则处理。我们不会自动替你选定接收人或发送记录。分享流程完成后会移除临时导出文件，iOS 也会管理临时存储。"
             ]
           },
           {
-            "title": "3. 我们如何使用信息",
+            "title": "我们如何使用信息",
             "paragraphs": [
               "本地信息仅用于计算、恢复输入现场、管理历史与记忆、应用偏好及控制系统评分请求频率。汇率请求仅用于取得参考报价。我们不将这些信息用于广告、用户画像或出售。"
             ]
           },
           {
-            "title": "4. 第三方共享、转让与公开披露",
+            "title": "第三方共享、转让与公开披露",
             "paragraphs": [
               "应用通过 HTTPS 连接 [[frankfurter]] 获取法币报价，使用 [[exchangerate]] 作为备用，并通过 [[yadio]] 获取可选 BTC 报价。请求的是参考报价表，不附带你的金额、算式、备注、标签、历史、剪贴板文字或应用自行生成的用户标识。",
               "建立网络连接会使接收服务及其基础设施获得处理连接所需的信息，例如 IP 地址和技术请求头。是否记录、保存这些信息，由各服务商的实际政策决定。Frankfurter 在文档中说明其隐私规则；ExchangeRate-API 的条款页面包含隐私政策；Yadio 提供其服务条款。",
@@ -419,7 +419,7 @@
             ]
           },
           {
-            "title": "5. 信息如何存储与保护",
+            "title": "信息如何存储与保护",
             "paragraphs": [
               "本地记录会保留到你主动删除、替换相关数据，或在 iOS 中选择“删除 App”。“卸载 App”通常保留数据。本地存储使用应用沙盒和 iOS 数据保护，汇率请求使用 HTTPS；任何系统都不能承诺绝对安全。",
               "根据设备备份设置，应用数据可能包含在设备或 iCloud 备份中。备份和已导出文件独立于应用当前存储，需要通过 Apple 或你选择的目的地管理。删除本地历史不会撤回已分享文件。",
@@ -427,14 +427,14 @@
             ]
           },
           {
-            "title": "6. 未成年人保护",
+            "title": "未成年人保护",
             "paragraphs": [
               "应用是通用计算工具，不要求使用者提供个人信息。我们不会有意向儿童索取个人信息。如果你认为儿童通过支持邮件发送了个人信息，请联系 [[email]]，我们会核查并处理。",
               "根据适用法律，你可能对我们实际持有的个人信息享有访问、更正、删除或限制处理等权利。有关支持通信的请求请联系 [[email]]；本地应用记录由你在设备上管理。"
             ]
           },
           {
-            "title": "7. 管理你的信息",
+            "title": "管理你的信息",
             "paragraphs": [
               "你可以修改偏好、删除单条或当前匹配的历史记录、管理标签和记忆卡片，以及导出历史。获取新报价需要网络；离线计算和已缓存报价不需要新请求。",
               "请避免发送密码或无关敏感信息。你可以通过邮件请求删除支持通信，我们会结合适用义务处理。我们没有开发者服务器上的本地计算历史副本可供查询或删除。",
@@ -442,19 +442,19 @@
             ]
           },
           {
-            "title": "8. 服务内容的变更",
+            "title": "服务内容的变更",
             "paragraphs": [
               "如果未来功能需要新增权限或改变信息处理方式，我们会相应更新政策，并在适用法律要求时于相关处理开始前告知你或取得同意。"
             ]
           },
           {
-            "title": "9. 本隐私政策的查阅与修订",
+            "title": "本隐私政策的查阅与修订",
             "paragraphs": [
               "当功能或数据处理方式变化时，我们会更新本页及生效日期，并按适用法律要求通知重要变更。对本政策有疑问，请联系 [[email]]。"
             ]
           },
           {
-            "title": "10. 联系我们",
+            "title": "联系我们",
             "paragraphs": [
               "本政策适用于 iPhone 版 [[app]] 以及相关介绍和支持网页。“我们”指应用开发者，联系邮箱为 [[email]]。内容说明当前实现；第三方服务自己的数据处理遵循下文所链接的政策。",
               "如果你联系 [[email]]，我们会收到你主动发送的邮件地址、正文及附件。你的邮件服务商和我们的邮件服务商负责传递。我们仅将这些信息用于回复、排查问题和保留必要沟通，不用于广告。",
@@ -472,13 +472,13 @@
         ],
         "sections": [
           {
-            "title": "1. 协议的接受",
+            "title": "协议的接受",
             "paragraphs": [
               "本协议由你与 [[app]] 的开发者订立，联系邮箱为 [[email]]，适用于应用及相关支持网页。请同时阅读隐私政策。如果不同意这些条款，请勿使用应用。法律规定的强制性消费者及隐私权利继续适用。"
             ]
           },
           {
-            "title": "2. 产品与服务",
+            "title": "产品与服务",
             "paragraphs": [
               "当前应用面向 iOS 26 及以上的 iPhone，提供基础与科学计算、货币换算、独立记忆、历史及显示设置。App 支持英语、阿拉伯语等语言，具体以 App 内提供的语言为准；本支持网站提供中文和英文。",
               "当前版本免费，无广告、订阅、应用内购买或账号要求。基础与科学计算和本地记录可离线使用；货币换算需要已有下载报价，获取新报价需要网络。",
@@ -486,7 +486,7 @@
             ]
           },
           {
-            "title": "3. 使用规则",
+            "title": "使用规则",
             "paragraphs": [
               "在遵守本协议和 Apple 适用条款的前提下，你可以在自己拥有或控制的兼容设备上安装使用本应用，包括普通个人、学习和工作计算。",
               "你需选择合适的角度单位、币种、数字格式和输入内容。在将结果用于账务、合同、工程、医疗或其他错误可能带来损害的决策前，请独立核对。本应用不能代替合资格专业人士或经认证的计算系统。",
@@ -495,19 +495,19 @@
             ]
           },
           {
-            "title": "4. 知识产权",
+            "title": "知识产权",
             "paragraphs": [
               "不得违法复制或分发应用、冒用所有权、侵犯他人权益、绕过安全控制或干扰第三方服务。对逆向工程的限制仅在适用法律允许的范围内生效。你保留自己备注、标签和计算记录的权利。"
             ]
           },
           {
-            "title": "5. 个人隐私",
+            "title": "个人隐私",
             "paragraphs": [
               "隐私政策说明第三方网络请求、Apple 系统评分、支持邮件及网页托管。本协议不将你的计算内容所有权转移给我们。"
             ]
           },
           {
-            "title": "6. 免责声明",
+            "title": "免责声明",
             "paragraphs": [
               "应用使用有限精度数值表示。科学函数、部分四则运算及货币换算可能为近似值，或超出支持范围。舍入、显示小数位数以及复制或导出的文字，可能与内部完整数值不同。",
               "法币参考报价来自 [[frankfurter]]，备用为 [[exchangerate]]；BTC 参考报价来自 [[yadio]]。供应商可能变更数据、覆盖范围或服务可用性。刷新时间表示获取数据的时间，不一定代表新的市场报价。",
@@ -518,19 +518,19 @@
             ]
           },
           {
-            "title": "7. 协议的修改",
+            "title": "协议的修改",
             "paragraphs": [
               "我们可能因重要功能或法律变化更新本协议。当前文本和生效日期会在此提供，并在适用情况下履行通知或取得同意的要求。如果不接受变更，你可以停止使用并删除应用。"
             ]
           },
           {
-            "title": "8. 违约处理",
+            "title": "违约处理",
             "paragraphs": [
               "如发生严重滥用，我们可以采取法律允许的措施；应用没有可供停用的用户账号。你可以随时停止使用，删除应用不等于同时删除已导出副本或设备备份。"
             ]
           },
           {
-            "title": "9. 其他条款",
+            "title": "其他条款",
             "paragraphs": [
               "Apple 的分发与使用条款独立适用。如果某条规定不可执行，其余规定仍在法律允许的范围内有效。本协议不预先指定争议法院，也不覆盖你居住地法律要求的保护。",
               "中英文页面说明同一服务。如翻译存在疑问，请联系我们，不应据此认定某项强制性权利被取消。有关应用、协议或支持的问题，请发送邮件至 [[email]]。"
