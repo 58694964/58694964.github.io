@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Calculator√ handles local calculations, optional sharing, exchange-rate requests, system ratings and support email.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy — Calculator√</title>
+  <link rel="canonical" href="https://58694964.github.io/calculator/en/deepPrivacy.html">
+  <link rel="alternate" hreflang="en" href="https://58694964.github.io/calculator/en/deepPrivacy.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://58694964.github.io/calculator/zh/deepPrivacy.html">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>/* Shared layout based on shortcutalarm's existing public pages. */
+:root{--background:#f5f5f7;--surface:#fff;--ink:#333;--heading:#1a1a1a;--muted:#626268;--accent:#0f766e;--summary:#eff8f6;--border:#d9dfdf;--radius:15px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;color:var(--ink);max-width:1200px;margin:0 auto;padding:20px;background:var(--background);overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:20px;top:-100px;padding:10px 16px;background:var(--surface);z-index:2}
+.skip-link:focus{top:12px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;color:var(--heading);text-decoration:none;padding-block:10px}
+.languages{display:flex;gap:8px;align-items:center}
+.languages a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:6px 12px;text-decoration:none;border-radius:8px}
+.languages a[aria-current]{color:var(--heading);background:var(--surface);font-weight:600;box-shadow:0 1px 3px #00000012}
+.header{text-align:center;padding:40px 0}
+.app-header{display:flex;align-items:center;justify-content:center;gap:20px}
+.logo{width:80px;height:80px;object-fit:contain;border-radius:15px;flex-shrink:0}
+h1{font-size:2.5rem;line-height:1.25;color:var(--heading);font-weight:700}
+h2{font-size:1.5rem;line-height:1.4;color:var(--heading);margin-block:0 20px}
+h3{font-size:1.2rem;line-height:1.45;color:var(--heading);margin-block:24px 10px}
+h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+p{margin-bottom:15px}
+p:last-child{margin-bottom:0}
+.meta time{white-space:nowrap}
+.meta{color:var(--muted);font-size:.95rem}
+.app-header .meta{margin-top:10px}
+.card{background:var(--surface);padding:40px;border-radius:var(--radius);box-shadow:0 4px 6px #0000001a;margin-bottom:30px}
+.feature-list{list-style:none;margin-top:22px}
+.feature-list li{margin-block:14px;padding-inline-start:22px;position:relative}
+.feature-list li::before{content:"";position:absolute;inset-inline-start:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.price{font-size:1.6rem;font-weight:600;color:var(--accent);margin-block:10px}
+.faq-item{margin-block:22px}
+.contact-support{border-top:1px solid var(--border);padding-top:8px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.contact-button:hover{background:#115e59;text-decoration:none}
+.contact-button:active{transform:translateY(1px)}
+.contact-address{margin-top:12px}
+.document-header{padding-bottom:30px}
+.summary{background:var(--summary);border-inline-start:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-block:20px 30px}
+.toc{background:#f8f9fa;padding:20px 24px;border-radius:10px;margin-bottom:30px}
+.toc h2{font-size:1.1rem;margin-bottom:12px}
+ol,ul{padding-inline-start:24px}
+.toc li{margin-block:8px}
+.document section{margin-top:30px}
+.document section h2{margin-bottom:15px}
+.document section li{margin-bottom:8px}
+.document ul{margin-bottom:15px}
+.back-link{display:inline-flex;align-items:center;min-height:44px;margin-top:24px}
+.footer{text-align:center;padding:20px;font-size:.95rem;color:var(--muted)}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin-bottom:12px}
+.footer nav a{display:inline-flex;align-items:center;min-height:44px}
+.footer nav a[aria-current]{color:var(--heading);font-weight:600;text-decoration:none}
+.copyright{font-size:.85rem}
+@media(max-width:600px){body{padding:16px}.header{padding-block:30px}.app-header{flex-direction:column;gap:16px}h1{font-size:2rem}h2{font-size:1.3rem}.card{padding:24px;margin-bottom:20px}.summary,.toc{padding:18px}.footer{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.contact-button:active{transform:none}}
+@media print{body{background:white;max-width:none;padding:0;color:black}.topbar,.skip-link,.footer,.back-link,.contact-button{display:none}.card{box-shadow:none;padding:0}.header{padding:0 0 24px}.summary{border-color:#555}.document section{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="topbar" aria-label="Site navigation">
+    <a class="brand" href="index.html"><bdi>Calculator√</bdi></a>
+    <div class="languages" aria-label="Language"><a lang="en" hreflang="en" href="../en/deepPrivacy.html" aria-current="page">English</a><a lang="zh-CN" hreflang="zh-CN" href="../zh/deepPrivacy.html">中文</a></div>
+  </nav>
+  <header class="header document-header"><h1>Privacy Policy</h1></header>
+<main id="main" class="card document">
+  <p class="meta">Applies to: <bdi>Calculator√</bdi> · Effective date: <time datetime="2026-10-14">2026-10-14</time></p>
+  <div class="summary"><p><bdi>Calculator√</bdi> calculates on your device. We do not operate a server for your calculation history, require an account, or include advertising or third-party analytics SDKs. Your calculation content is not sent with exchange-rate requests.</p>
+<p>Network providers receive the information needed to handle a connection. If you email support or share a result, you decide what information to send. This policy explains those separate situations.</p></div>
+  <nav class="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#section-1">1. Information covered</a></li>
+<li><a href="#section-2">2. How information is obtained</a></li>
+<li><a href="#section-3">3. How information is used</a></li>
+<li><a href="#section-4">4. Third-party sharing, transfer and disclosure</a></li>
+<li><a href="#section-5">5. Storage and protection</a></li>
+<li><a href="#section-6">6. Protection of minors</a></li>
+<li><a href="#section-7">7. Managing your information</a></li>
+<li><a href="#section-8">8. Changes to the service</a></li>
+<li><a href="#section-9">9. Reviewing and updating this policy</a></li>
+<li><a href="#section-10">10. Contact us</a></li></ol></nav>
+  <section id="section-1"><h2>1. 1. Information covered</h2><p>The app stores the following in its local app storage to provide and restore its features:</p>
+<p>We do not automatically upload your expressions, amounts, history, notes, tags or memory values. The app has no account, advertising identifier, advertising SDK, third-party analytics SDK or third-party crash-reporting SDK. It does not request access to location, contacts, photos, camera, microphone, health data or music. Reading the system region to choose an initial currency does not read your location.</p><ul><li>The current expression, result, calculation mode, angle unit, currency pair and input direction.</li><li>Calculation history, saved currency snapshots, favorites, notes, tags, global memory cards and scientific memory.</li><li>Appearance, language, number-format, precision, sound, haptic and favorite-currency preferences.</li><li>Cached exchange rates, provider identifiers and request, quote and successful-refresh times.</li><li>A local successful-calculation counter and last rating-request time, used only to limit the system rating prompt.</li></ul></section>
+<section id="section-2"><h2>2. 2. How information is obtained</h2><p>The app reads clipboard text when you explicitly choose Paste. iOS controls any cross-app paste permission. Clipboard text is processed locally and is not sent to the developer or exchange-rate services.</p>
+<p>Copy writes the text you choose to the system clipboard. Share and CSV export use the system share interface; a recipient, app or destination you select may receive the exported content and apply its own privacy practices. We do not automatically send exported records to a recipient. Temporary export files are removed after the share flow completes; iOS also manages temporary storage.</p></section>
+<section id="section-3"><h2>3. 3. How information is used</h2><p>Local information is used to calculate, restore input, manage history and memory, apply preferences and limit system review requests. Exchange-rate requests obtain reference quotes. We do not use this information for advertising or profiling, or sell it.</p></section>
+<section id="section-4"><h2>4. 4. Third-party sharing, transfer and disclosure</h2><p>The app connects over HTTPS to <a href="https://frankfurter.dev/">Frankfurter</a> for fiat quotes, <a href="https://www.exchangerate-api.com/terms">ExchangeRate-API</a> as fallback, and <a href="https://www.yadio.io/terms.html">Yadio</a> for optional BTC quotes. It requests reference rate tables; it does not attach your amount, expression, notes, tags, history, clipboard text or an app-generated user identifier.</p>
+<p>A network connection necessarily makes connection information such as your IP address and technical request headers available to the receiving service and its infrastructure. Whether such information is logged or retained depends on the provider’s practices. Frankfurter publishes its privacy information on its documentation page; ExchangeRate-API’s terms include a privacy policy. Yadio publishes its service terms.</p>
+<p>Quotes and refresh metadata are saved locally. Failed updates keep existing cached quotes. Third-party infrastructure may process requests outside your country. We do not operate the rate providers or control their retention policies.</p>
+<p>Downloads, updates, system ratings and any diagnostics you choose to share through iOS are handled by <a href="https://www.apple.com/legal/privacy/">Apple</a> under Apple’s settings and policies. The app may request Apple’s native rating interface after use. The counter and cooldown for this request stay local; the app cannot determine your star rating, whether you submitted a review, or whether the prompt appeared. Public App Store reviews may be visible to the developer and other people.</p>
+<p>These static pages are hosted by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> through GitHub Pages. The pages do not add analytics scripts, advertising trackers, cookies or a feedback-submission backend. GitHub may process technical connection information under its own privacy statement. Clicking an external link or sending email is handled by the destination service.</p></section>
+<section id="section-5"><h2>5. 5. Storage and protection</h2><p>Local records remain until you remove them, replace the relevant data, or use Delete App in iOS. Offload App normally retains local data. We use the app sandbox and iOS data protection for local storage, and HTTPS for rate requests; no system can promise absolute security.</p>
+<p>Your device backup settings may include app data in a device or iCloud backup. Backups and files you export are separate from the app’s live storage and are managed through Apple or the destination you selected. Deleting local history does not recall a shared file.</p>
+<p>You can edit preferences, delete individual or matching history records, manage tags and memory cards, and export history. Network access is necessary to fetch fresh quotes; offline calculation and available cached quotes do not require a new rate request.</p></section>
+<section id="section-6"><h2>6. 6. Protection of minors</h2><p>The app is a general calculation utility and does not require anyone to submit personal information to use it. We do not knowingly solicit personal information from children. If you believe a child sent personal information through support, contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a> so we can review and address it.</p>
+<p>Depending on applicable law, you may have rights to access, correct, delete or restrict personal information we actually hold. Contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a> for requests concerning support correspondence; local app records remain under your control on your device.</p></section>
+<section id="section-7"><h2>7. 7. Managing your information</h2><p>You can edit preferences, delete individual or matching history records, manage tags and memory cards, and export history. Network access is necessary to fetch fresh quotes; offline calculation and available cached quotes do not require a new rate request.</p>
+<p>Please avoid sending passwords or unrelated sensitive information. You may request deletion of support correspondence by email; we will handle the request subject to applicable obligations. There is no developer-hosted copy of your local calculation history to retrieve or delete.</p>
+<p>Depending on applicable law, you may have rights to access, correct, delete or restrict personal information we actually hold. Contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a> for requests concerning support correspondence; local app records remain under your control on your device.</p></section>
+<section id="section-8"><h2>8. 8. Changes to the service</h2><p>If future features require new permissions or change information handling, we will update this policy and provide notice or obtain consent before that processing where required by applicable law.</p></section>
+<section id="section-9"><h2>9. 9. Reviewing and updating this policy</h2><p>If features or data handling change, we will update this page and its effective date. Material changes will be communicated as required by applicable law. Contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a> if anything in this policy is unclear.</p></section>
+<section id="section-10"><h2>10. 10. Contact us</h2><p>This policy covers <bdi>Calculator√</bdi> for iPhone and these product/support pages. “We” refers to the app developer, who can be contacted at <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>. It describes the current implementation; a third-party service’s own handling is governed by its policy linked below.</p>
+<p>If you contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>, we receive the email address, message and attachments you choose to send. Your email provider and our email provider handle delivery. We use this information to respond to your request, investigate the issue and maintain necessary correspondence, not for advertising.</p>
+<p>Please avoid sending passwords or unrelated sensitive information. You may request deletion of support correspondence by email; we will handle the request subject to applicable obligations. There is no developer-hosted copy of your local calculation history to retrieve or delete.</p></section>
+  <a class="back-link" href="index.html">Back to Calculator√</a>
+</main>
+
+  <footer class="footer">
+    <nav aria-label="More information"><a href="index.html">App Home</a><a href="deepPrivacy.html" aria-current="page">Privacy Policy</a><a href="deepAgreement.html">User Agreement</a></nav>
+    <p><a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a></p>
+    <p class="copyright">© 2026 <bdi>Calculator√</bdi></p>
+  </footer>
+</body>
+</html>
