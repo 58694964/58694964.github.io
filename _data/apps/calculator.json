@@ -1,0 +1,543 @@
+{
+  "app_name": "Calculator√",
+  "site_url": "https://58694964.github.io/calculator",
+  "support_email": "617646201lzy@gmail.com",
+  "effective_date": "2026-10-14",
+  "copyright_year": 2026,
+  "services": {
+    "frankfurter": {
+      "name": "Frankfurter",
+      "url": "https://frankfurter.dev/"
+    },
+    "exchangerate": {
+      "name": "ExchangeRate-API",
+      "url": "https://www.exchangerate-api.com/terms"
+    },
+    "yadio": {
+      "name": "Yadio",
+      "url": "https://www.yadio.io/terms.html"
+    },
+    "apple": {
+      "name": "Apple",
+      "url": "https://www.apple.com/legal/privacy/"
+    },
+    "github": {
+      "name": "GitHub",
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    }
+  },
+  "languages": {
+    "en": {
+      "html_lang": "en",
+      "language_name": "English",
+      "skip": "Skip to content",
+      "navigation": "Site navigation",
+      "language_label": "Language",
+      "footer": "More information",
+      "icon_label": "app icon",
+      "contents": "Contents",
+      "applies": "Applies to:",
+      "effective": "Effective date:",
+      "back": "Back to",
+      "home": {
+        "label": "App Home",
+        "description": "Basic and scientific calculations, currency conversion, memory and history. Calculator√ for iPhone: free, without ads or an account.",
+        "platform": "iPhone · iOS 26 or later",
+        "headline": "Everyday calculations. Scientific functions. Currency conversion.",
+        "intro": [
+          "[[app]] brings basic and scientific calculation together with currency conversion. Switch between them while keeping your current expression, and return to your previous work when you reopen the app.",
+          "Keep useful values in memory, find earlier calculations in history, and choose the number format that suits you. No account, advertisements or subscription."
+        ],
+        "features": [
+          [
+            "Basic and scientific",
+            "Use arithmetic, percentages, powers, roots, logarithms and trigonometric functions, with degrees or radians."
+          ],
+          [
+            "Currency conversion",
+            "Calculate in either currency row, swap the pair, search currencies and keep favorites. Downloaded rates remain available when a refresh fails. BTC is optional and available when it has a valid quote or cached quote."
+          ],
+          [
+            "Two separate memories",
+            "Use independent cards in the global memory library, alongside a separate scientific memory."
+          ],
+          [
+            "History you can use again",
+            "Restore a calculation, add a note or tag, mark favorites, search and filter, or export a record or the current matching results as CSV."
+          ],
+          [
+            "Your preferred display",
+            "Choose Ocean, Blossom or Dusk, light or dark appearance, decimal precision, separators, sounds and haptics."
+          ],
+          [
+            "App languages",
+            "Supports languages including English and Arabic. See the app for available languages. Arabic interface layout and numeral options keep mathematical expressions and keypad order consistent."
+          ],
+          [
+            "Local calculation data",
+            "Expressions, history, notes, tags, memory and settings are stored on your device. Only share or export them when you choose."
+          ]
+        ],
+        "pricing_heading": "Pricing",
+        "price": "Free. No ads. No subscription.",
+        "pricing_text": "The current app has no in-app purchases, paid feature tiers or account requirement.",
+        "support_heading": "Support & Help",
+        "faq_heading": "Frequently asked questions",
+        "faqs": [
+          [
+            "Does it work offline?",
+            "Basic and scientific calculation, memory and local history work offline. Currency conversion needs a previously downloaded quote; without one, the unavailable conversion is not presented as a valid amount."
+          ],
+          [
+            "Where do the exchange rates come from?",
+            "Fiat rates use [[frankfurter]], with [[exchangerate]] as a fallback. BTC reference prices use [[yadio]] independently. These are reference rates, not bank or exchange execution prices."
+          ],
+          [
+            "How often do rates refresh?",
+            "On launch, the app checks whether at least 12 hours have passed since a successful fiat refresh. Entering BTC conversion checks its separate five-minute interval. Manual refresh bypasses these intervals, and a failed refresh retains the saved quotes."
+          ],
+          [
+            "Does changing decimal precision change the calculation?",
+            "No. Decimal and number-format settings change presentation, not the underlying calculation value. Copied or exported text reflects the displayed precision. Some scientific results and currency conversions are approximate."
+          ],
+          [
+            "Can I edit and reuse earlier work?",
+            "Move the cursor or select an operator in ordinary-number expressions. Currency input is edited at the end. History can restore a calculation; currency calculations then continue using the latest locally available rates, while the history card keeps its original snapshot."
+          ],
+          [
+            "Why does iOS ask before pasting?",
+            "Clipboard access happens when you choose Paste. iOS may ask for permission to paste from another app. The app does not monitor your clipboard in the background."
+          ],
+          [
+            "How can I remove my data?",
+            "Delete history records and memory cards in the app, or use Delete App in iOS to remove its local storage. Offloading preserves app data. Previously exported files and device backups must be managed separately."
+          ]
+        ],
+        "contact_heading": "Contact us",
+        "contact_text": "For help or feedback, email us with your app version, iOS version and a description of the issue. Include screenshots only if you are comfortable sharing their contents.",
+        "contact_action": "Email support"
+      },
+      "privacy": {
+        "label": "Privacy Policy",
+        "description": "How Calculator√ handles local calculations, optional sharing, exchange-rate requests, system ratings and support email.",
+        "summary": [
+          "[[app]] calculates on your device. We do not operate a server for your calculation history, require an account, or include advertising or third-party analytics SDKs. Your calculation content is not sent with exchange-rate requests.",
+          "Network providers receive the information needed to handle a connection. If you email support or share a result, you decide what information to send. This policy explains those separate situations."
+        ],
+        "sections": [
+          {
+            "title": "1. Information covered",
+            "paragraphs": [
+              "The app stores the following in its local app storage to provide and restore its features:",
+              "We do not automatically upload your expressions, amounts, history, notes, tags or memory values. The app has no account, advertising identifier, advertising SDK, third-party analytics SDK or third-party crash-reporting SDK. It does not request access to location, contacts, photos, camera, microphone, health data or music. Reading the system region to choose an initial currency does not read your location."
+            ],
+            "items": [
+              "The current expression, result, calculation mode, angle unit, currency pair and input direction.",
+              "Calculation history, saved currency snapshots, favorites, notes, tags, global memory cards and scientific memory.",
+              "Appearance, language, number-format, precision, sound, haptic and favorite-currency preferences.",
+              "Cached exchange rates, provider identifiers and request, quote and successful-refresh times.",
+              "A local successful-calculation counter and last rating-request time, used only to limit the system rating prompt."
+            ]
+          },
+          {
+            "title": "2. How information is obtained",
+            "paragraphs": [
+              "The app reads clipboard text when you explicitly choose Paste. iOS controls any cross-app paste permission. Clipboard text is processed locally and is not sent to the developer or exchange-rate services.",
+              "Copy writes the text you choose to the system clipboard. Share and CSV export use the system share interface; a recipient, app or destination you select may receive the exported content and apply its own privacy practices. We do not automatically send exported records to a recipient. Temporary export files are removed after the share flow completes; iOS also manages temporary storage."
+            ]
+          },
+          {
+            "title": "3. How information is used",
+            "paragraphs": [
+              "Local information is used to calculate, restore input, manage history and memory, apply preferences and limit system review requests. Exchange-rate requests obtain reference quotes. We do not use this information for advertising or profiling, or sell it."
+            ]
+          },
+          {
+            "title": "4. Third-party sharing, transfer and disclosure",
+            "paragraphs": [
+              "The app connects over HTTPS to [[frankfurter]] for fiat quotes, [[exchangerate]] as fallback, and [[yadio]] for optional BTC quotes. It requests reference rate tables; it does not attach your amount, expression, notes, tags, history, clipboard text or an app-generated user identifier.",
+              "A network connection necessarily makes connection information such as your IP address and technical request headers available to the receiving service and its infrastructure. Whether such information is logged or retained depends on the provider’s practices. Frankfurter publishes its privacy information on its documentation page; ExchangeRate-API’s terms include a privacy policy. Yadio publishes its service terms.",
+              "Quotes and refresh metadata are saved locally. Failed updates keep existing cached quotes. Third-party infrastructure may process requests outside your country. We do not operate the rate providers or control their retention policies.",
+              "Downloads, updates, system ratings and any diagnostics you choose to share through iOS are handled by [[apple]] under Apple’s settings and policies. The app may request Apple’s native rating interface after use. The counter and cooldown for this request stay local; the app cannot determine your star rating, whether you submitted a review, or whether the prompt appeared. Public App Store reviews may be visible to the developer and other people.",
+              "These static pages are hosted by [[github]] through GitHub Pages. The pages do not add analytics scripts, advertising trackers, cookies or a feedback-submission backend. GitHub may process technical connection information under its own privacy statement. Clicking an external link or sending email is handled by the destination service."
+            ]
+          },
+          {
+            "title": "5. Storage and protection",
+            "paragraphs": [
+              "Local records remain until you remove them, replace the relevant data, or use Delete App in iOS. Offload App normally retains local data. We use the app sandbox and iOS data protection for local storage, and HTTPS for rate requests; no system can promise absolute security.",
+              "Your device backup settings may include app data in a device or iCloud backup. Backups and files you export are separate from the app’s live storage and are managed through Apple or the destination you selected. Deleting local history does not recall a shared file.",
+              "You can edit preferences, delete individual or matching history records, manage tags and memory cards, and export history. Network access is necessary to fetch fresh quotes; offline calculation and available cached quotes do not require a new rate request."
+            ]
+          },
+          {
+            "title": "6. Protection of minors",
+            "paragraphs": [
+              "The app is a general calculation utility and does not require anyone to submit personal information to use it. We do not knowingly solicit personal information from children. If you believe a child sent personal information through support, contact [[email]] so we can review and address it.",
+              "Depending on applicable law, you may have rights to access, correct, delete or restrict personal information we actually hold. Contact [[email]] for requests concerning support correspondence; local app records remain under your control on your device."
+            ]
+          },
+          {
+            "title": "7. Managing your information",
+            "paragraphs": [
+              "You can edit preferences, delete individual or matching history records, manage tags and memory cards, and export history. Network access is necessary to fetch fresh quotes; offline calculation and available cached quotes do not require a new rate request.",
+              "Please avoid sending passwords or unrelated sensitive information. You may request deletion of support correspondence by email; we will handle the request subject to applicable obligations. There is no developer-hosted copy of your local calculation history to retrieve or delete.",
+              "Depending on applicable law, you may have rights to access, correct, delete or restrict personal information we actually hold. Contact [[email]] for requests concerning support correspondence; local app records remain under your control on your device."
+            ]
+          },
+          {
+            "title": "8. Changes to the service",
+            "paragraphs": [
+              "If future features require new permissions or change information handling, we will update this policy and provide notice or obtain consent before that processing where required by applicable law."
+            ]
+          },
+          {
+            "title": "9. Reviewing and updating this policy",
+            "paragraphs": [
+              "If features or data handling change, we will update this page and its effective date. Material changes will be communicated as required by applicable law. Contact [[email]] if anything in this policy is unclear."
+            ]
+          },
+          {
+            "title": "10. Contact us",
+            "paragraphs": [
+              "This policy covers [[app]] for iPhone and these product/support pages. “We” refers to the app developer, who can be contacted at [[email]]. It describes the current implementation; a third-party service’s own handling is governed by its policy linked below.",
+              "If you contact [[email]], we receive the email address, message and attachments you choose to send. Your email provider and our email provider handle delivery. We use this information to respond to your request, investigate the issue and maintain necessary correspondence, not for advertising.",
+              "Please avoid sending passwords or unrelated sensitive information. You may request deletion of support correspondence by email; we will handle the request subject to applicable obligations. There is no developer-hosted copy of your local calculation history to retrieve or delete."
+            ]
+          }
+        ]
+      },
+      "agreement": {
+        "label": "User Agreement",
+        "description": "Terms for using Calculator√, including free features, local records, reference rates and calculation limitations.",
+        "summary": [
+          "[[app]] is a calculation and reference-conversion utility. It does not execute currency trades, hold funds or provide financial, tax, legal or other professional advice.",
+          "Check important results against an appropriate independent source. Scientific values, formatting, third-party quotes and cached data can introduce approximation or become outdated. Nothing in this agreement removes rights or remedies that applicable law does not allow us to exclude."
+        ],
+        "sections": [
+          {
+            "title": "1. Acceptance of this agreement",
+            "paragraphs": [
+              "This agreement is between you and the developer of [[app]], reachable at [[email]], and covers your use of the app and related support pages. Please read it together with the Privacy Policy. If you do not agree to these terms, do not use the app. Mandatory consumer and privacy rights continue to apply."
+            ]
+          },
+          {
+            "title": "2. Products and services",
+            "paragraphs": [
+              "The current app is an iPhone utility for iOS 26 or later, offering basic and scientific calculation, currency conversion, independent memories, history and display settings. App languages include English and Arabic; see the app for available languages. These support pages are provided in Chinese and English.",
+              "The current version is free, without advertisements, subscriptions, in-app purchases or an account requirement. Basic and scientific calculations and local records work offline. Currency conversion needs an available downloaded quote; fetching new quotes requires network access.",
+              "We may improve features, fix defects or adapt to operating-system changes. These terms do not authorize a new charge or subscription; any future paid offering would be disclosed separately before purchase."
+            ]
+          },
+          {
+            "title": "3. Rules of use",
+            "paragraphs": [
+              "Subject to these terms and Apple’s applicable terms, you may install and use the app on compatible devices that you own or control. This includes ordinary personal, study and work calculations.",
+              "You are responsible for choosing an appropriate angle unit, currency, format and input. Verify results before relying on them for accounting, contracts, engineering, healthcare or other decisions where an error could cause harm. The app is not a substitute for a qualified professional or a certified calculation system.",
+              "Your expressions, history, notes, tags, memory and settings are kept in local app storage as described in the Privacy Policy. You control the information you copy, paste, export or share. Check a file’s contents and destination before sharing it.",
+              "Keep independent copies of records you need. Device loss, deletion of the app, storage problems, software faults or backup choices can affect local data. We do not operate an account-based backup or cloud synchronization service for these records."
+            ]
+          },
+          {
+            "title": "4. Intellectual property",
+            "paragraphs": [
+              "Do not unlawfully copy or redistribute the app, misrepresent ownership, infringe others’ rights, circumvent security controls or interfere with third-party services. Restrictions on reverse engineering apply only to the extent permitted by applicable law. You retain rights in your own notes, tags and calculation records."
+            ]
+          },
+          {
+            "title": "5. Personal privacy",
+            "paragraphs": [
+              "The Privacy Policy explains third-party network requests, Apple’s system rating flow, support messages and website hosting. These terms do not grant us ownership of your calculation content."
+            ]
+          },
+          {
+            "title": "6. Disclaimers and liability",
+            "paragraphs": [
+              "The app uses finite numerical representations. Scientific functions, some arithmetic and currency conversion may be approximate or outside supported limits. Rounding, displayed decimal places and copied/exported text may differ from the full internal value.",
+              "Fiat reference quotes use [[frankfurter]], with [[exchangerate]] as fallback; BTC reference quotes use [[yadio]]. The providers may change their data, coverage or availability. A refresh time indicates retrieval, not necessarily a new market quote.",
+              "Quotes may be delayed or cached and do not include the fees, spread, taxes or execution conditions of a bank, broker, merchant or exchange. BTC information is only a reference conversion feature; the app is not a wallet, trading platform or investment service.",
+              "History keeps the amounts and quote snapshot saved at that time. Restoring a currency calculation continues using the latest locally available rates, so a new result can differ from its history card. No current conversion is guaranteed when a required quote is unavailable.",
+              "We aim to keep the app useful and correct, but cannot guarantee uninterrupted network services, error-free results or compatibility with every future system change. Third-party providers and the operating system are outside our control.",
+              "To the extent applicable law permits, the app and reference data are supplied without a guarantee that they meet a particular purpose, and we are not responsible for indirect or consequential losses arising from reliance on a calculation or quote. These limitations do not exclude liability or statutory guarantees that cannot lawfully be excluded, including applicable consumer remedies."
+            ]
+          },
+          {
+            "title": "7. Changes to this agreement",
+            "paragraphs": [
+              "We may update this agreement to reflect material feature or legal changes. The current text and effective date will be available here, and required notices or consent will be provided where applicable. If you do not accept a change, you can stop using and delete the app."
+            ]
+          },
+          {
+            "title": "8. Breach of this agreement",
+            "paragraphs": [
+              "If you materially misuse the app, we may take measures allowed by applicable law. The app has no user accounts to suspend. You may stop using it at any time; deleting it does not automatically remove exported copies or device backups."
+            ]
+          },
+          {
+            "title": "9. Other provisions",
+            "paragraphs": [
+              "Apple’s distribution and usage terms apply independently. If a provision of this agreement is unenforceable, the remaining provisions continue to apply to the extent permitted by law. This agreement does not select a forum or override protections that the law of your place of residence requires.",
+              "The Chinese and English pages describe the same service. If a translation appears inconsistent, contact us rather than assuming that it removes a mandatory right. For questions about the app, these terms or support, email [[email]]."
+            ]
+          }
+        ]
+      }
+    },
+    "zh": {
+      "html_lang": "zh-CN",
+      "language_name": "中文",
+      "skip": "跳到正文",
+      "navigation": "网站导航",
+      "language_label": "语言",
+      "footer": "更多信息",
+      "icon_label": "应用图标",
+      "contents": "目录",
+      "applies": "适用应用：",
+      "effective": "生效日期：",
+      "back": "返回",
+      "home": {
+        "label": "应用主页",
+        "description": "Calculator√ 是适用于 iPhone 的免费计算器，支持基础与科学计算、货币换算、记忆和历史，无广告、无需账号。",
+        "platform": "iPhone · iOS 26 及以上",
+        "headline": "日常计算、科学函数与货币换算。",
+        "intro": [
+          "[[app]] 将基础计算、科学计算和货币换算放在同一处。切换模式保留当前算式，再次打开应用也能接着之前的计算。",
+          "把常用数值放进记忆库，在历史中找回记录，按自己的习惯设置数字显示。无需注册，没有广告或订阅。"
+        ],
+        "features": [
+          [
+            "基础与科学计算",
+            "支持四则运算、百分比、幂、根、对数和三角函数，可切换角度制与弧度制。"
+          ],
+          [
+            "双向货币换算",
+            "上下两行都能输入计算，支持交换币种、搜索和常用排序。刷新失败时继续使用已保存汇率；BTC 有有效报价或缓存时可选。"
+          ],
+          [
+            "两套独立记忆",
+            "全局记忆库可保存多张独立数值卡，科学计算另有一份独立记忆。"
+          ],
+          [
+            "可继续使用的历史",
+            "恢复计算、添加备注和标签、收藏、搜索与筛选，并通过系统分享导出 CSV。"
+          ],
+          [
+            "按习惯调整显示",
+            "提供 Ocean、Blossom、Dusk 三种主题，以及深浅外观、小数精度、数字分隔符、声音与触觉设置。"
+          ],
+          [
+            "App 支持语言",
+            "支持英语、阿拉伯语等语言，具体以 App 内提供的语言为准。阿拉伯语界面和数字字符选项保持数学表达式与键盘顺序一致。"
+          ],
+          [
+            "计算内容保存在设备上",
+            "算式、历史、备注、标签、记忆和偏好本地保存，仅在你主动选择分享或导出时发送。"
+          ]
+        ],
+        "pricing_heading": "价格",
+        "price": "免费，无广告，无订阅。",
+        "pricing_text": "当前版本没有应用内购买、付费功能分层，也不要求创建账号。",
+        "support_heading": "支持与帮助",
+        "faq_heading": "常见问题",
+        "faqs": [
+          [
+            "没有网络可以使用吗？",
+            "基础与科学计算、记忆和本地历史可以离线使用。货币换算需要已有的下载报价；没有所需报价时，不会把未知换算值当成有效金额。"
+          ],
+          [
+            "汇率来自哪里？",
+            "法币优先使用 [[frankfurter]]，备用来源为 [[exchangerate]]；BTC 独立使用 [[yadio]] 参考价格。这些不是银行或交易所的实际成交报价。"
+          ],
+          [
+            "多久更新一次汇率？",
+            "启动时检查距离上次法币刷新成功是否已满 12 小时；进入 BTC 换算时检查其独立的 5 分钟间隔。手动刷新不受这些间隔限制，失败时保留已保存报价。"
+          ],
+          [
+            "修改小数位数会改变计算结果吗？",
+            "不会。精度和格式设置影响显示，不改写内部计算值。复制或导出的文字采用显示精度；部分科学计算和货币结果属于近似值。"
+          ],
+          [
+            "可以编辑或恢复之前的计算吗？",
+            "普通数字算式支持移动光标和点选运算符，货币输入保持末尾编辑。历史可以恢复计算；货币恢复后使用当前本地最新汇率继续计算，历史卡片仍保留当时快照。"
+          ],
+          [
+            "为什么粘贴时会出现系统权限提示？",
+            "只有主动选择“粘贴”时才读取剪贴板。iOS 可能询问是否允许从其他 App 粘贴，应用不会在后台监控剪贴板。"
+          ],
+          [
+            "如何删除数据？",
+            "可以在 App 中删除历史记录和记忆卡片，或在 iOS 中选择“删除 App”移除本地存储。“卸载 App”通常会保留数据；已经导出的文件和设备备份需另行管理。"
+          ]
+        ],
+        "contact_heading": "联系我们",
+        "contact_text": "需要帮助或希望反馈问题，请发送邮件并说明 App 版本、iOS 版本及复现步骤。只有在愿意分享图片内容时再附上截图。",
+        "contact_action": "发送支持邮件"
+      },
+      "privacy": {
+        "label": "隐私政策",
+        "description": "了解 Calculator√ 如何处理本地计算、主动分享、汇率请求、系统评分和支持邮件。",
+        "summary": [
+          "[[app]] 在设备上完成计算。我们不运营用于保存你计算历史的服务器，不要求账号，也不接入广告或第三方分析 SDK。汇率请求不附带你的计算内容。",
+          "网络服务商会接收到处理连接所需的信息。如果你联系支持或分享结果，由你决定发送哪些内容。下文分别说明这些情况。"
+        ],
+        "sections": [
+          {
+            "title": "1. 信息收集范围",
+            "paragraphs": [
+              "应用为提供功能及恢复现场，在本地应用存储中保存：",
+              "我们不会自动上传你的算式、金额、历史、备注、标签或记忆值。应用没有账号、广告标识符、广告 SDK、第三方分析 SDK 或第三方崩溃上报 SDK。应用不请求定位、通讯录、照片、相机、麦克风、健康数据或音乐访问权限。读取系统地区以选择初始币种，不等于获取你的位置。"
+            ],
+            "items": [
+              "当前算式、结果、计算模式、角度单位、币对和输入方向。",
+              "计算历史、当时的货币报价快照、收藏、备注、标签、全局记忆卡片和科学记忆。",
+              "外观、语言、数字字符、分隔符、小数精度、声音、触觉和常用币种偏好。",
+              "缓存汇率、供应商标识，以及请求时间、报价时间和最近成功刷新时间。",
+              "成功计算的本地计数和上次系统评分请求时间，仅用于控制评分弹窗频率。"
+            ]
+          },
+          {
+            "title": "2. 我们如何获取信息",
+            "paragraphs": [
+              "只有你明确选择“粘贴”时，应用才读取剪贴板文字；跨应用粘贴的权限提示由 iOS 管理。文字在本地处理，不发给开发者或汇率服务。",
+              "“复制”将所选文字写入系统剪贴板。分享和 CSV 导出使用系统分享界面；你选择的接收方、应用或存储位置可能获得相应内容，并按其自己的规则处理。我们不会自动替你选定接收人或发送记录。分享流程完成后会移除临时导出文件，iOS 也会管理临时存储。"
+            ]
+          },
+          {
+            "title": "3. 我们如何使用信息",
+            "paragraphs": [
+              "本地信息仅用于计算、恢复输入现场、管理历史与记忆、应用偏好及控制系统评分请求频率。汇率请求仅用于取得参考报价。我们不将这些信息用于广告、用户画像或出售。"
+            ]
+          },
+          {
+            "title": "4. 第三方共享、转让与公开披露",
+            "paragraphs": [
+              "应用通过 HTTPS 连接 [[frankfurter]] 获取法币报价，使用 [[exchangerate]] 作为备用，并通过 [[yadio]] 获取可选 BTC 报价。请求的是参考报价表，不附带你的金额、算式、备注、标签、历史、剪贴板文字或应用自行生成的用户标识。",
+              "建立网络连接会使接收服务及其基础设施获得处理连接所需的信息，例如 IP 地址和技术请求头。是否记录、保存这些信息，由各服务商的实际政策决定。Frankfurter 在文档中说明其隐私规则；ExchangeRate-API 的条款页面包含隐私政策；Yadio 提供其服务条款。",
+              "报价及刷新元数据保存在本地，更新失败保留已有缓存。第三方基础设施可能在你所在国家或地区以外处理请求。我们不运营这些汇率服务，也不能控制它们的信息保存规则。",
+              "应用下载、更新、系统评分，以及你通过 iOS 设置选择分享的诊断，由 [[apple]] 按其设置和政策处理。应用可能在使用后请求系统原生评分界面；用于限频的计数和时间保存在本地。应用无法判断你评了几星、是否提交评价或弹窗是否显示。公开的 App Store 评价可能被开发者及其他人查看。",
+              "本静态网站由 [[github]] 的 GitHub Pages 托管。网页不另加分析脚本、广告追踪器、Cookie 或反馈提交后台。GitHub 可能按其隐私声明处理连接技术信息；点击外部链接或发送邮件后，相关操作由目的服务处理。"
+            ]
+          },
+          {
+            "title": "5. 信息如何存储与保护",
+            "paragraphs": [
+              "本地记录会保留到你主动删除、替换相关数据，或在 iOS 中选择“删除 App”。“卸载 App”通常保留数据。本地存储使用应用沙盒和 iOS 数据保护，汇率请求使用 HTTPS；任何系统都不能承诺绝对安全。",
+              "根据设备备份设置，应用数据可能包含在设备或 iCloud 备份中。备份和已导出文件独立于应用当前存储，需要通过 Apple 或你选择的目的地管理。删除本地历史不会撤回已分享文件。",
+              "你可以修改偏好、删除单条或当前匹配的历史记录、管理标签和记忆卡片，以及导出历史。获取新报价需要网络；离线计算和已缓存报价不需要新请求。"
+            ]
+          },
+          {
+            "title": "6. 未成年人保护",
+            "paragraphs": [
+              "应用是通用计算工具，不要求使用者提供个人信息。我们不会有意向儿童索取个人信息。如果你认为儿童通过支持邮件发送了个人信息，请联系 [[email]]，我们会核查并处理。",
+              "根据适用法律，你可能对我们实际持有的个人信息享有访问、更正、删除或限制处理等权利。有关支持通信的请求请联系 [[email]]；本地应用记录由你在设备上管理。"
+            ]
+          },
+          {
+            "title": "7. 管理你的信息",
+            "paragraphs": [
+              "你可以修改偏好、删除单条或当前匹配的历史记录、管理标签和记忆卡片，以及导出历史。获取新报价需要网络；离线计算和已缓存报价不需要新请求。",
+              "请避免发送密码或无关敏感信息。你可以通过邮件请求删除支持通信，我们会结合适用义务处理。我们没有开发者服务器上的本地计算历史副本可供查询或删除。",
+              "根据适用法律，你可能对我们实际持有的个人信息享有访问、更正、删除或限制处理等权利。有关支持通信的请求请联系 [[email]]；本地应用记录由你在设备上管理。"
+            ]
+          },
+          {
+            "title": "8. 服务内容的变更",
+            "paragraphs": [
+              "如果未来功能需要新增权限或改变信息处理方式，我们会相应更新政策，并在适用法律要求时于相关处理开始前告知你或取得同意。"
+            ]
+          },
+          {
+            "title": "9. 本隐私政策的查阅与修订",
+            "paragraphs": [
+              "当功能或数据处理方式变化时，我们会更新本页及生效日期，并按适用法律要求通知重要变更。对本政策有疑问，请联系 [[email]]。"
+            ]
+          },
+          {
+            "title": "10. 联系我们",
+            "paragraphs": [
+              "本政策适用于 iPhone 版 [[app]] 以及相关介绍和支持网页。“我们”指应用开发者，联系邮箱为 [[email]]。内容说明当前实现；第三方服务自己的数据处理遵循下文所链接的政策。",
+              "如果你联系 [[email]]，我们会收到你主动发送的邮件地址、正文及附件。你的邮件服务商和我们的邮件服务商负责传递。我们仅将这些信息用于回复、排查问题和保留必要沟通，不用于广告。",
+              "请避免发送密码或无关敏感信息。你可以通过邮件请求删除支持通信，我们会结合适用义务处理。我们没有开发者服务器上的本地计算历史副本可供查询或删除。"
+            ]
+          }
+        ]
+      },
+      "agreement": {
+        "label": "用户协议",
+        "description": "Calculator√ 的使用条款，包括免费功能、本地记录、参考汇率及计算结果的适用边界。",
+        "summary": [
+          "[[app]] 是计算和参考换算工具，不执行货币交易、不保管资金，也不提供金融、税务、法律或其他专业意见。",
+          "重要结果请通过适当的独立来源核对。科学数值、显示格式、第三方报价及缓存数据可能存在近似或过期。本协议不排除适用法律不允许排除的权利和救济。"
+        ],
+        "sections": [
+          {
+            "title": "1. 协议的接受",
+            "paragraphs": [
+              "本协议由你与 [[app]] 的开发者订立，联系邮箱为 [[email]]，适用于应用及相关支持网页。请同时阅读隐私政策。如果不同意这些条款，请勿使用应用。法律规定的强制性消费者及隐私权利继续适用。"
+            ]
+          },
+          {
+            "title": "2. 产品与服务",
+            "paragraphs": [
+              "当前应用面向 iOS 26 及以上的 iPhone，提供基础与科学计算、货币换算、独立记忆、历史及显示设置。App 支持英语、阿拉伯语等语言，具体以 App 内提供的语言为准；本支持网站提供中文和英文。",
+              "当前版本免费，无广告、订阅、应用内购买或账号要求。基础与科学计算和本地记录可离线使用；货币换算需要已有下载报价，获取新报价需要网络。",
+              "我们可能改进功能、修复问题或适配系统变化。本协议本身不授权新增扣费或订阅；未来如提供付费服务，会在购买前另行说明。"
+            ]
+          },
+          {
+            "title": "3. 使用规则",
+            "paragraphs": [
+              "在遵守本协议和 Apple 适用条款的前提下，你可以在自己拥有或控制的兼容设备上安装使用本应用，包括普通个人、学习和工作计算。",
+              "你需选择合适的角度单位、币种、数字格式和输入内容。在将结果用于账务、合同、工程、医疗或其他错误可能带来损害的决策前，请独立核对。本应用不能代替合资格专业人士或经认证的计算系统。",
+              "算式、历史、备注、标签、记忆和设置按隐私政策保存在本地。你决定复制、粘贴、导出或分享哪些信息，分享前请核对内容和目的地。",
+              "请独立保存需要长期保留的记录。设备遗失、删除应用、存储问题、软件故障或备份选择可能影响本地数据。我们不运营这些记录的账号备份或云同步服务。"
+            ]
+          },
+          {
+            "title": "4. 知识产权",
+            "paragraphs": [
+              "不得违法复制或分发应用、冒用所有权、侵犯他人权益、绕过安全控制或干扰第三方服务。对逆向工程的限制仅在适用法律允许的范围内生效。你保留自己备注、标签和计算记录的权利。"
+            ]
+          },
+          {
+            "title": "5. 个人隐私",
+            "paragraphs": [
+              "隐私政策说明第三方网络请求、Apple 系统评分、支持邮件及网页托管。本协议不将你的计算内容所有权转移给我们。"
+            ]
+          },
+          {
+            "title": "6. 免责声明",
+            "paragraphs": [
+              "应用使用有限精度数值表示。科学函数、部分四则运算及货币换算可能为近似值，或超出支持范围。舍入、显示小数位数以及复制或导出的文字，可能与内部完整数值不同。",
+              "法币参考报价来自 [[frankfurter]]，备用为 [[exchangerate]]；BTC 参考报价来自 [[yadio]]。供应商可能变更数据、覆盖范围或服务可用性。刷新时间表示获取数据的时间，不一定代表新的市场报价。",
+              "报价可能延迟或来自缓存，不包含银行、经纪商、商户或交易所的手续费、价差、税费及执行条件。BTC 仅作为参考换算功能；应用不是钱包、交易平台或投资服务。",
+              "历史保存当时的金额和报价快照。恢复货币计算后，续算使用当前本地最新可用汇率，因此新结果可能与历史卡片不同。所需报价不可用时，不保证能得到当前换算结果。",
+              "我们努力保持应用实用和准确，但无法保证网络服务永不中断、结果永无错误或兼容所有未来系统变化。第三方供应商和操作系统不受我们控制。",
+              "在适用法律允许的范围内，应用及参考数据不保证适合某一特定目的；对于依赖计算或报价产生的间接或后果性损失，我们不承担相应责任。上述限制不排除法律禁止排除的责任、法定保证或消费者救济。"
+            ]
+          },
+          {
+            "title": "7. 协议的修改",
+            "paragraphs": [
+              "我们可能因重要功能或法律变化更新本协议。当前文本和生效日期会在此提供，并在适用情况下履行通知或取得同意的要求。如果不接受变更，你可以停止使用并删除应用。"
+            ]
+          },
+          {
+            "title": "8. 违约处理",
+            "paragraphs": [
+              "如发生严重滥用，我们可以采取法律允许的措施；应用没有可供停用的用户账号。你可以随时停止使用，删除应用不等于同时删除已导出副本或设备备份。"
+            ]
+          },
+          {
+            "title": "9. 其他条款",
+            "paragraphs": [
+              "Apple 的分发与使用条款独立适用。如果某条规定不可执行，其余规定仍在法律允许的范围内有效。本协议不预先指定争议法院，也不覆盖你居住地法律要求的保护。",
+              "中英文页面说明同一服务。如翻译存在疑问，请联系我们，不应据此认定某项强制性权利被取消。有关应用、协议或支持的问题，请发送邮件至 [[email]]。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
