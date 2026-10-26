@@ -1,225 +1,129 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户协议 - 指令闹钟</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="指令闹钟使用条款，涵盖条件提醒、Pro 购买、订阅及支持。">
+  <meta name="color-scheme" content="light">
+  <title>用户协议 — Shortcut Alarm</title>
+  <link rel="canonical" href="https://58694964.github.io/shortcutalarm/zh/deepAgreement.html">
+  <link rel="alternate" hreflang="en" href="https://58694964.github.io/shortcutalarm/en/deepAgreement.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://58694964.github.io/shortcutalarm/zh/deepAgreement.html">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>/* Shared layout based on shortcutalarm's existing public pages. */
+:root{--background:#f5f5f7;--surface:#fff;--ink:#333;--heading:#1a1a1a;--muted:#626268;--accent:#0f766e;--summary:#eff8f6;--border:#d9dfdf;--radius:15px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;color:var(--ink);max-width:1200px;margin:0 auto;padding:20px;background:var(--background);overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:20px;top:-100px;padding:10px 16px;background:var(--surface);z-index:2}
+.skip-link:focus{top:12px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;color:var(--heading);text-decoration:none;padding-block:10px}
+.languages{display:flex;gap:8px;align-items:center}
+.languages a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:6px 12px;text-decoration:none;border-radius:8px}
+.languages a[aria-current]{color:var(--heading);background:var(--surface);font-weight:600;box-shadow:0 1px 3px #00000012}
+.header{text-align:center;padding:40px 0}
+.app-header{display:flex;align-items:center;justify-content:center;gap:20px}
+.logo{width:80px;height:80px;object-fit:contain;border-radius:15px;flex-shrink:0}
+h1{font-size:2.5rem;line-height:1.25;color:var(--heading);font-weight:700}
+h2{font-size:1.5rem;line-height:1.4;color:var(--heading);margin-block:0 20px}
+h3{font-size:1.2rem;line-height:1.45;color:var(--heading);margin-block:24px 10px}
+h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+p{margin-bottom:15px}
+p:last-child{margin-bottom:0}
+.meta time{white-space:nowrap}
+.meta{color:var(--muted);font-size:.95rem}
+.app-header .meta{margin-top:10px}
+.card{background:var(--surface);padding:40px;border-radius:var(--radius);box-shadow:0 4px 6px #0000001a;margin-bottom:30px}
+.feature-list{list-style:none;margin-top:22px}
+.feature-list li{margin-block:14px;padding-inline-start:22px;position:relative}
+.feature-list li::before{content:"";position:absolute;inset-inline-start:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.price{font-size:1.6rem;font-weight:600;color:var(--accent);margin-block:10px}
+.faq-item{margin-block:22px}
+.contact-support{border-top:1px solid var(--border);padding-top:8px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.contact-button:hover{background:#115e59;text-decoration:none}
+.contact-button:active{transform:translateY(1px)}
+.contact-address{margin-top:12px}
+.document-header{padding-bottom:30px}
+.summary{background:var(--summary);border-inline-start:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-block:20px 30px}
+.toc{background:#f8f9fa;padding:20px 24px;border-radius:10px;margin-bottom:30px}
+.toc h2{font-size:1.1rem;margin-bottom:12px}
+ol,ul{padding-inline-start:24px}
+.toc li{margin-block:8px}
+.document section{margin-top:30px}
+.document section h2{margin-bottom:15px}
+.document section li{margin-bottom:8px}
+.document ul{margin-bottom:15px}
+.back-link{display:inline-flex;align-items:center;min-height:44px;margin-top:24px}
+.footer{text-align:center;padding:20px;font-size:.95rem;color:var(--muted)}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin-bottom:12px}
+.footer nav a{display:inline-flex;align-items:center;min-height:44px}
+.footer nav a[aria-current]{color:var(--heading);font-weight:600;text-decoration:none}
+.copyright{font-size:.85rem}
+@media(max-width:600px){body{padding:16px}.header{padding-block:30px}.app-header{flex-direction:column;gap:16px}h1{font-size:2rem}h2{font-size:1.3rem}.card{padding:24px;margin-bottom:20px}.summary,.toc{padding:18px}.footer{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.contact-button:active{transform:none}}
+@media print{body{background:white;max-width:none;padding:0;color:black}.topbar,.skip-link,.footer,.back-link,.contact-button{display:none}.card{box-shadow:none;padding:0}.header{padding:0 0 24px}.summary{border-color:#555}.document section{break-inside:avoid}a{color:inherit}}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f7;
-        }
-
-        .header {
-            text-align: center;
-            padding: 40px 0;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-        }
-
-        .content {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #1a1a1a;
-            margin: 30px 0 15px 0;
-            font-size: 1.5em;
-        }
-
-        h3 {
-            color: #1a1a1a;
-            margin: 20px 0 10px 0;
-            font-size: 1.2em;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        ul {
-            margin: 0 0 15px 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .notice {
-            background: #fdf6e3;
-            border-left: 4px solid #d09000;
-            padding: 20px 24px;
-            border-radius: 10px;
-            margin: 20px 0 30px 0;
-        }
-
-        .notice p:last-child {
-            margin-bottom: 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #568214;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .meta {
-            color: #666;
-            font-size: 0.95em;
-        }
-    </style>
+/* App-specific brand colors; other apps retain the shared defaults. */
+:root{--accent:#EA493D;--accent-hover:#CE3B30;--summary:#FFF3F1;--border:#E4D9D8}
+.contact-button:hover{background:var(--accent-hover)}
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>用户协议</h1>
-    </div>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <nav class="topbar" aria-label="网站导航">
+    <a class="brand" href="index.html"><bdi>Shortcut Alarm</bdi></a>
+    <div class="languages" aria-label="语言"><a lang="en" hreflang="en" href="../en/deepAgreement.html">English</a><a lang="zh-CN" hreflang="zh-CN" href="../zh/deepAgreement.html" aria-current="page">中文</a></div>
+  </nav>
+  <header class="header document-header"><h1>用户协议</h1></header>
+<main id="main" class="card document">
+  <p class="meta">适用应用： <bdi>Shortcut Alarm</bdi> · 生效日期： <time datetime="2026-10-26">2026-10-26</time></p>
+  <div class="summary"><p>指令闹钟提供时间与地理围栏闹钟，并可添加限制条件。使用提醒前，请确认设置和必要权限。</p>
+<p>Pro 购买由 Apple 处理。订阅在取消前会自动续订，一次性解锁不自动续费。本协议不限制您依法享有的强制性权利。</p></div>
+  <nav class="toc" aria-label="目录"><h2>目录</h2><ol><li><a href="#section-1">协议范围</a></li>
+<li><a href="#section-2">功能与使用条件</a></li>
+<li><a href="#section-3">提醒可靠性与外部信息</a></li>
+<li><a href="#section-4">免费使用与 Pro 权益</a></li>
+<li><a href="#section-5">订阅、试用与取消</a></li>
+<li><a href="#section-6">恢复购买与退款</a></li>
+<li><a href="#section-7">音乐与合理使用</a></li>
+<li><a href="#section-8">本地数据与停止使用</a></li>
+<li><a href="#section-9">更新、责任与法定权利</a></li>
+<li><a href="#section-10">联系与语言版本</a></li></ol></nav>
+  <section id="section-1"><h2>1. 协议范围</h2><p>本协议说明您使用指令闹钟（<bdi>Shortcut Alarm</bdi>）及相关支持服务的规则。服务提供者为 App Store 页面列明的应用开发者，联系邮箱为 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>。请同时阅读页脚链接的隐私政策。</p>
+<p>应用许可受您通过 App Store 下载时适用的许可协议约束；未提供自定义许可时，包括 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>。本协议对产品使用作补充说明，不替代 Apple 的使用规则或您依法不可放弃的权利。Apple 购买还适用您所在地区的 <a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms</a>。</p></section>
+<section id="section-2"><h2>2. 功能与使用条件</h2><p>应用支持时间闹钟和地理围栏闹钟，以及时间、位置、天气、温度和紫外线等可选条件。您需要使用 App Store 页面说明的兼容 iPhone 与 iOS 版本。部分功能需要授权、网络连接或 Pro 权益。</p>
+<p>条件会限制提醒是否被安排或触发。设定时间到达，不代表在条件未满足时也应响铃。请核对重复日期、时间范围、位置规则、节假日设置及应用中的相关提示。</p></section>
+<section id="section-3"><h2>3. 提醒可靠性与外部信息</h2><p>提醒和条件判断受 iOS、设备电量、权限、定位精度、后台运行、网络及可用预报数据影响。围栏事件或后台判断可能延迟，天气预报也可能与实际天气不同。</p>
+<p>请保持适合您闹钟的权限与设备设置，并在更改设置后重新核对。重要提醒请准备独立备用方式。本应用不是紧急预警系统，也不能替代医疗、安全关键或专业监测。</p>
+<p>地图、天气与节假日信息可能存在缺漏或变化。重要日期及当地要求请向权威来源核实。这些实际限制不免除适用法律要求我们承担的义务或提供的救济。</p></section>
+<section id="section-4"><h2>4. 免费使用与 Pro 权益</h2><p>当前免费版本最多可创建三个闹钟。Pro 解除应用的三个闹钟数量限制，并开放天气、温度和紫外线条件；iOS 与技术调度限制仍然适用。可用方案可能包括月度订阅、年度订阅和一次性解锁。</p>
+<p>具体功能、价格、货币、计费周期及优惠会在购买前通过应用和 Apple 确认界面展示。方案和资格可能因商店地区与 Apple 账号而不同。未在购买时显示的试用或价格，不应视为已向您提供。</p></section>
+<section id="section-5"><h2>5. 订阅、试用与取消</h2><p>确认购买后，Apple 会通过您 Apple 账号关联的付款方式扣款。订阅在续期前未取消时会自动续订。为避免下一期扣款，请至少在当前周期结束前 24 小时取消。购买时显示的免费试用，在未及时取消时会按展示的方案转为付费订阅。</p>
+<p>您可在 iOS“设置”&gt; 您的姓名 &gt;“订阅”中管理或取消，操作说明见 <a href="https://support.apple.com/en-us/118428">Apple subscription cancellation guide</a>。删除应用或关闭闹钟不会取消订阅。取消后的可用期限以 Apple 显示的周期与状态为准；取消试用可能提前结束试用权益。</p>
+<p>一次性解锁是对购买时说明的 Pro 权益进行非周期性购买，不产生定期续费。它不代表所有未来独立产品或无关服务均包含在内，也不保证外部服务永久可用。已购权益及依法享有的救济仍受适用法律保护。</p></section>
+<section id="section-6"><h2>6. 恢复购买与退款</h2><p>您可使用原购买 Apple 账号，通过“恢复购买”恢复符合条件的权益，应用需要能够通过 Apple 验证购买。待处理、已到期或已撤销的交易可能无法提供权益。</p>
+<p>App Store 购买的退款可按 <a href="https://support.apple.com/en-us/118223">Apple refund guide</a> 向 Apple 申请，是否符合条件取决于购买情况与适用法律。本协议不设置一律不退款的规则，也不限制法定取消权、保修权或其他消费者权利。</p></section>
+<section id="section-7"><h2>7. 音乐与合理使用</h2><p>请仅导入您有权使用的音乐。导入会生成供闹钟使用的本地副本，不转移版权，也不授予再次分发的权利。受保护的 Apple Music 订阅曲目，以及本机无法访问的歌曲，可能无法导出。</p>
+<p>请依法使用应用并尊重他人权利，不要干扰服务、绕过购买验证或未经授权访问信息。对于复制、修改或逆向工程的限制，仍以适用法律及相关许可允许的范围为限。</p></section>
+<section id="section-8"><h2>8. 本地数据与停止使用</h2><p>请自行维护需要的设备备份。应用没有提供自有账号同步或本地闹钟、导入音频的远程找回服务。删除应用可能移除本地设置与文件。</p>
+<p>您可随时停止使用并删除应用；有效订阅需要另行通过 Apple 取消。本地数据、权限及支持邮件的处理方式见隐私政策。</p></section>
+<section id="section-9"><h2>9. 更新、责任与法定权利</h2><p>我们可能因产品、安全或法律变化更新应用及本协议，并更新生效日期。重大变化会按法律要求告知，不会追溯剥夺您已依法取得的强制性权利。</p>
+<p>我们会以合理的谨慎和技能提供应用，但无法保证运行永不中断或外部数据完全无误。本协议不排除依法不能排除的责任，也不限制强制性的消费者保护、保修或救济。</p>
+<p>您的权利及可寻求救济的法院或主管部门由适用法律确定。本协议不要求您放弃居住地法律的强制性保护。部分条款不能执行时，其余条款在法律允许的范围内继续适用。</p></section>
+<section id="section-10"><h2>10. 联系与语言版本</h2><p>如对本协议有疑问，或需要技术支持，请联系 <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>。说明问题时可附上应用版本和必要信息，无需提供与问题无关的个人资料。</p>
+<p>本协议提供英文与中文版本，两种版本旨在表达相同含义。如出现翻译差异，我们会予以澄清，不因此减少您依法享有的权利。</p></section>
+  <a class="back-link" href="index.html">返回 Shortcut Alarm</a>
+</main>
 
-    <div class="content">
-        <p class="meta">适用于：指令闹钟 iOS 版 &nbsp;·&nbsp; 生效日期：2026 年 9 月 9 日</p>
-
-        <div class="notice">
-            <p><strong>在依赖本应用之前，请先读第 6 条。</strong>指令闹钟通过操作系统排期闹钟，并使用操作系统提供的位置与天气数据判断条件。这三者都不保证在任何情况下都完整、及时、正确。凡是漏响会造成实际损害的场合，请不要把它当作唯一保障。</p>
-        </div>
-
-        <h2>特别提示</h2>
-
-        <p>欢迎使用指令闹钟。本用户协议（以下称「本协议」）是你（以下称「用户」）与名为「指令闹钟」的应用程序（以下称「本应用」「我们」）的开发者之间，就你下载、安装和使用本应用所订立的协议。</p>
-
-        <p>请在使用本应用前仔细阅读本协议，特别注意第 6 条的免责声明与第 6.4 款的责任限制。你下载、安装或使用本应用，即表示你已完整阅读、理解并接受本协议。如果你不接受其中任何部分，请不要使用本应用，并将其从设备上移除。</p>
-
-        <h2>1. 协议的接受</h2>
-
-        <p>1.1 本协议自你首次使用本应用时生效，并在你持续使用期间持续有效。</p>
-
-        <p>1.2 你须具备订立本协议的相应民事行为能力。如果你是未成年人，请在监护人同意并监督下使用本应用。</p>
-
-        <p>1.3 本协议以我们的隐私政策为补充，隐私政策构成本协议不可分割的一部分。就信息处理事项，两者不一致时以隐私政策为准。</p>
-
-        <h2>2. 产品与服务</h2>
-
-        <p>2.1 本应用是一款面向 iOS 的条件闹钟。它允许你创建由时刻触发、或由进入 / 离开某个地理区域触发的闹钟，并为其附加条件——时间区间、位置、天气、温度、紫外线——由这些条件决定闹钟是否响、以及在哪一刻响。</p>
-
-        <p>2.2 本应用免费下载，不含广告。免费状态下你可保留最多 3 条闹钟，且所有条件类型都可以配置，以便你在决定是否付费之前先试用。保存使用了天气、温度或紫外线条件的闹钟，或保留超过 3 条闹钟，需要 Pro。</p>
-
-        <p>2.3 <strong>Pro</strong> 是本应用的付费档位。它解除闹钟数量上限，并解锁天气、温度与紫外线三种条件。它以三种形式提供：按月自动续期订阅、按年自动续期订阅，以及一次性买断（不续期）。各档的当前价格在你确认购买前于应用内显示，并因国家或地区而异。</p>
-
-        <p>2.4 <strong>自动续期订阅。</strong>你确认购买时，费用将记入你的 Apple 账户。除非你在当前订阅期结束前至少 24 小时关闭自动续期，否则订阅将按相同周期、以届时价格自动续期。续期费用将在当前订阅期结束前 24 小时内扣取。你可随时在设备的 Apple 账户设置中查看、管理并关闭自动续期。删除本应用并不会取消订阅。</p>
-
-        <p>2.5 <strong>免费试用。</strong>在提供免费试用的情况下，每个 Apple 账户仅可享用一次，是否具备资格由 App Store 判定，而非由我们判定。若你未在试用期结束前取消，订阅即开始并自动扣费。若你在试用期内购买订阅，试用期的剩余部分即告作废。</p>
-
-        <p>2.6 <strong>一次性买断。</strong>一次性买断为用于购买的那个 Apple 账户授予 Pro 权益，在本应用持续可用期间有效。它不续期，不是订阅，也没有需要取消的项目。它不包含我们未来可能发布的其他独立应用。</p>
-
-        <p>2.7 <strong>支付与退款。</strong>所有购买均由 Apple 处理，而非由我们处理。我们从不接收、也不存储你的支付信息。退款依 App Store 的条款由 Apple 处理，我们既无法批准也无法拒绝。若确有问题，欢迎联系我们，我们会在力所能及的范围内协助。</p>
-
-        <p>2.8 <strong>价格调整。</strong>若我们调整订阅价格，该调整仅在 App Store 规则允许的范围内适用于已有订阅——在相关情形下，规则要求涨价生效前须取得你的明确同意。若你不愿以新价格继续，可随时取消。</p>
-
-        <p>2.9 <strong>恢复购买。</strong>你的权益与你的 Apple 账户绑定。更换设备或重新安装后，只要登录同一 Apple 账户，权益通常会自动恢复。应用内亦提供「恢复购买」操作，以应对未能自动恢复的情形。</p>
-
-        <p>2.10 本应用完全在你的设备上运行，不需要账号，我们也不运营任何接收你数据的服务器。天气、温度与紫外线条件需要网络连接，以便操作系统取回预报；其余功能均可离线使用。</p>
-
-        <p>2.11 为改进本应用或使其适配新版 iOS，我们可能在后续版本中新增、修改或移除功能。若某项变更实质性影响你已有闹钟的行为，我们会在应用内明确说明。</p>
-
-        <h2>3. 使用规则</h2>
-
-        <p>3.1 你可以在你拥有或控制的设备上，出于个人非商业目的使用本应用。</p>
-
-        <p>3.2 你同意不会：</p>
-        <ul>
-            <li>对本应用进行反编译、反汇编、逆向工程，或以其他方式试图获取其源代码，法律明确允许的范围除外；</li>
-            <li>修改、改编本应用或制作其衍生作品，或移除、遮盖其中任何权利声明；</li>
-            <li>再分发、转售、出租、出借、再许可本应用，或以其他方式将其提供给任何第三方；</li>
-            <li>以干扰操作系统的闹钟、位置或天气服务的方式使用本应用，或绕过平台的任何技术限制；</li>
-            <li>将本应用用于你所在司法辖区内的任何违法用途，或以侵害他人权利的方式使用。</li>
-        </ul>
-
-        <p>3.3 你对自己创建的设置负责。选择了在条件成立时抑制响铃的提醒方式、关闭了闹钟开关、或拒绝了必需的系统权限，都会导致该闹钟不响——这是预期行为，不是缺陷。</p>
-
-        <p>3.4 你对自己设备的安全负责，包括其锁屏密码与生物识别。由于你的全部闹钟数据都保存在设备上，任何能解锁该设备的人都能看到这些数据。</p>
-
-        <h2>4. 知识产权</h2>
-
-        <p>4.1 我们拥有或已获授权使用本应用的全部知识产权，包括其源代码、界面设计、图标、插图、文字、声音，以及「指令闹钟 / Shortcut Alarm」名称与标识。本协议授予你个人的、非独占的、不可转让的、可撤销的使用许可，不向你转移任何所有权。</p>
-
-        <p>4.2 本应用内置的闹钟铃声，其许可允许在本应用内随附分发。这些铃声仅供在本应用内作为闹钟声音使用，不得提取或再分发。</p>
-
-        <p>4.3 你从自己音乐库中选择的音乐仍归你所有，并受你获取该音乐时所适用条款的约束。本应用仅将其作为闹钟声音播放，不复制、不导出、不再分发。</p>
-
-        <p>4.4 本应用展示或用于判断的天气数据由 iOS 内置的天气服务提供，其权利归该提供方所有。本应用按该提供方的要求展示其署名与法律声明。</p>
-
-        <p>4.5 本应用内置的节假日数据源自官方公布的安排。我们不对其中的事实主张任何所有权，也不保证该数据对每一个地区、每一个年份都完整或最新。</p>
-
-        <h2>5. 个人隐私</h2>
-
-        <p>5.1 本应用不收集你的个人信息。没有账号、不用登录，也没有属于我们的服务器。本应用保存什么、为何申请每一项系统权限，以及唯一一种坐标离开设备的情形，均在我们的隐私政策中完整说明。</p>
-
-        <p>5.2 你使用依赖位置、天气或音乐库的功能，即表示你同意本应用按隐私政策所述目的使用相应的系统权限。你可以随时在 iOS 设置中撤回该同意。</p>
-
-        <h2>6. 免责声明</h2>
-
-        <p>6.1 <strong>本应用按「现状」与「现有」基础提供，不附带任何形式的保证</strong>，无论明示或默示，包括对适销性、特定用途适用性或不侵权的任何默示保证。我们不保证本应用不会中断、没有错误，也不保证每一条闹钟都会在预期的确切时刻响起。</p>
-
-        <p>6.2 <strong>本应用依赖于它无法控制的服务。</strong>闹钟由操作系统登记并投递。地理围栏闹钟的越界事件由操作系统的定位服务检测，受信号质量、省电策略以及你授予的权限影响。天气、温度与紫外线数值来自第三方预报，预报是预测，可能出错。操作系统行为的变化、被撤回的权限、被限制的后台刷新、关机或没电的设备、不可用的网络，都可能导致闹钟不响，或比预期更晚才响。</p>
-
-        <p>6.3 <strong>请不要把本应用当作唯一保障。</strong>凡是漏响或延迟可能导致人身伤害、生命危险、财产损失、错过医疗处置或其他严重后果的场合，都不应以本应用作为唯一的提醒手段。此类场合请另行设置一个独立的闹钟。</p>
-
-        <p>6.4 在适用法律允许的最大范围内，对于因你使用或无法使用本应用而产生的任何间接的、附带的、特殊的、后果性的或惩罚性的损害，以及任何利润、收入、数据或机会的损失，我们不承担责任——包括闹钟未响、响晚、或在你未预期时响起所导致的任何后果。本协议不排除或限制依法不得排除或限制的责任；某些司法辖区不允许上述部分排除，在该等辖区内，上述排除仅在当地法律允许的范围内适用。</p>
-
-        <p>6.5 对于由你的设备、其操作系统、其设置、第三方软件或我们无法控制的网络状况所引起的问题，我们不承担责任。</p>
-
-        <h2>7. 协议的修改</h2>
-
-        <p>7.1 我们可能不时修订本协议，例如在本应用新增重要功能时，或在适用法律发生变化时。</p>
-
-        <p>7.2 修订后的协议自其发布于本页地址、并更新生效日期时起生效。若某项修订实质性影响你的权利，我们会在应用内提示。</p>
-
-        <p>7.3 如果你不接受修订后的协议，请停止使用本应用并将其从设备上移除。修订后继续使用本应用，即视为接受。</p>
-
-        <h2>8. 违约处理</h2>
-
-        <p>8.1 如果你以违反第 3 条的方式使用本应用，我们可以采取与违约程度相当的合理措施，包括终止本协议项下授予你的使用许可。</p>
-
-        <p>8.2 由于本应用不需要账号且在本地运行，我们在技术上无法中止某一个具体用户的访问。因此，许可终止意味着你必须停止使用本应用，并将其从设备上移除。</p>
-
-        <p>8.3 因你违反本协议给我们或任何第三方造成损失的，你仍应承担相应责任。</p>
-
-        <h2>9. 其他条款</h2>
-
-        <p>9.1 若本协议任何条款被认定为无效或不可执行，该条款应在必要的最小范围内作出调整或予以剔除，其余条款继续完全有效。</p>
-
-        <p>9.2 我们未行使本协议中的任何权利，不构成对该权利的放弃。</p>
-
-        <p>9.3 本应用通过 Apple App Store 分发，你对它的使用还须遵守苹果自身的条款。苹果不是本协议的当事方，对本应用及其内容不承担责任。就本应用的分发事项，苹果的条款与本协议冲突的，以苹果的条款为准。</p>
-
-        <p>9.4 本协议构成你与我们之间就本应用达成的全部协议，并取代此前就同一事项达成的任何谅解。</p>
-
-        <p>9.5 如对本协议有任何疑问，请联系 617646201lzy@gmail.com。我们会尽量在 24 小时内回复。</p>
-
-        <a class="back-link" href="home.html">&larr; 返回指令闹钟</a>
-    </div>
+  <footer class="footer">
+    <nav aria-label="更多信息"><a href="index.html">应用与支持</a><a href="deepPrivacy.html">隐私政策</a><a href="deepAgreement.html" aria-current="page">用户协议</a></nav>
+    <p><a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a></p>
+    <p class="copyright">© 2026 <bdi>Shortcut Alarm</bdi></p>
+  </footer>
 </body>
 </html>

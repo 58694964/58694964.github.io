@@ -1,0 +1,527 @@
+{
+  "app_name": "Shortcut Alarm",
+  "site_url": "https://58694964.github.io/shortcutalarm",
+  "support_email": "617646201lzy@gmail.com",
+  "effective_date": "2026-10-26",
+  "copyright_year": 2026,
+  "theme": {
+    "accent": "#EA493D",
+    "accent_hover": "#CE3B30",
+    "summary": "#FFF3F1",
+    "border": "#E4D9D8"
+  },
+  "services": {
+    "apple": {
+      "name": "Apple Privacy Policy",
+      "url": "https://www.apple.com/legal/privacy/"
+    },
+    "maps": {
+      "name": "Apple Maps & Privacy",
+      "url": "https://www.apple.com/legal/privacy/data/en/apple-maps/"
+    },
+    "weatherkit": {
+      "name": "Apple WeatherKit",
+      "url": "https://developer.apple.com/weatherkit/"
+    },
+    "github": {
+      "name": "GitHub Privacy Statement",
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    "cancel": {
+      "name": "Apple subscription cancellation guide",
+      "url": "https://support.apple.com/en-us/118428"
+    },
+    "refund": {
+      "name": "Apple refund guide",
+      "url": "https://support.apple.com/en-us/118223"
+    },
+    "media": {
+      "name": "Apple Media Services Terms",
+      "url": "https://www.apple.com/legal/internet-services/itunes/"
+    },
+    "eula": {
+      "name": "Apple Standard EULA",
+      "url": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+    }
+  },
+  "languages": {
+    "en": {
+      "html_lang": "en",
+      "language_name": "English",
+      "skip": "Skip to content",
+      "navigation": "Site navigation",
+      "language_label": "Language",
+      "footer": "More information",
+      "icon_label": "app icon",
+      "contents": "Contents",
+      "applies": "Applies to:",
+      "effective": "Effective date:",
+      "back": "Back to",
+      "privacy": {
+        "label": "Privacy Policy",
+        "description": "How Shortcut Alarm handles alarms, location, weather requests, imported music, purchases and support information.",
+        "summary": [
+          "Your alarm settings and imported audio are stored on your device. Shortcut Alarm has no app account, advertising or third-party analytics SDK. Location, map, weather and purchase features use Apple services as described below.",
+          "We do not operate a server that receives your alarm library, location or imported music. Contacting support or visiting this website involves separate data processing."
+        ],
+        "sections": [
+          {
+            "title": "Who this policy covers",
+            "paragraphs": [
+              "This policy describes the current [[app]] iPhone app and its support website. “We” means the app developer identified in the App Store listing. You can contact us at [[email]]. Apple and the website host process information under their own policies where described below."
+            ]
+          },
+          {
+            "title": "Information stored on your device",
+            "paragraphs": [
+              "The app uses local storage to provide and maintain the features you select. It does not upload this information to a developer-operated account or synchronization service."
+            ],
+            "items": [
+              "Alarms: times, repeat days, labels, enabled states, sounds, colors, snooze options and reminder settings.",
+              "Conditions and places: time windows, selected places and coordinates, geofence radii, inside/outside rules, weather, temperature and UV conditions.",
+              "Preferences and operating records: holiday overrides, imported-song names and file identifiers, system-alarm identifiers, and local settings used for scheduling and review prompts.",
+              "Location and weather cache: the latest saved scheduling coordinate and timestamp, and downloaded hourly forecast data with its location and fetch time.",
+              "Imported audio: a local copy of the song you choose, converted to an audio file for use as an alarm sound."
+            ]
+          },
+          {
+            "title": "Location, maps and background use",
+            "paragraphs": [
+              "With your permission, the app accesses your location to show your position on a map, configure geofence alarms, evaluate location conditions and obtain weather for your location. Saved places can reveal sensitive information about your routines.",
+              "When relevant alarms or conditions require it, Always location permission allows location-related checks while the app is not in the foreground. The app uses system region monitoring and significant-location-change monitoring where needed; it keeps a recent scheduling coordinate locally rather than a travel-history timeline.",
+              "Map display, place searches and address lookup use Apple MapKit. Search text, map areas and coordinates needed for a request are sent to Apple services. See [[maps]] and [[apple]].",
+              "You can change location access and Precise Location in iOS Settings. Denying or limiting access can prevent location-dependent alarms or conditions from working as configured. Revoking permission does not erase coordinates already saved in the app."
+            ]
+          },
+          {
+            "title": "Weather, temperature and UV information",
+            "paragraphs": [
+              "When a weather-related condition is used, the app requests an hourly forecast from Apple WeatherKit using a location coordinate and forecast time range. It caches the response locally to evaluate conditions and reduce repeat requests. It does not send your alarm labels or imported music with the forecast request.",
+              "Apple describes WeatherKit location information as used to provide forecasts without association with personally identifiable information or tracking between requests. See [[weatherkit]] and [[apple]] for Apple’s handling of this service."
+            ]
+          },
+          {
+            "title": "Alarm and music permissions",
+            "paragraphs": [
+              "Alarm authorization lets the app create and manage alarms through the iOS alarm system. Necessary alarm settings, including timing, presentation and sound, are provided to that system. Labels may be visible in system alarm interfaces, such as the Lock Screen.",
+              "Music-library permission is requested when you choose to import a song. The app uses the selected item’s title, identifier and accessible audio to create a local alarm sound; it does not upload the library or the song to us. Revoking music access does not remove audio already imported. Protected or unavailable audio may not be importable.",
+              "Permissions can be changed in iOS Settings. Refusing an optional permission affects the corresponding feature rather than creating a separate app account."
+            ]
+          },
+          {
+            "title": "Purchases and Apple diagnostics",
+            "paragraphs": [
+              "Apple processes payments and manages your Apple Account and payment details. The app uses StoreKit product and verified transaction information, such as product identifiers, entitlement status and revocation status, to unlock Pro and restore eligible purchases. We do not receive your card details through the app or send these transactions to a developer-operated verification server.",
+              "Apple may provide developers with App Store reports and diagnostics according to its services and your settings. The app does not embed a separate advertising, behavioral analytics or crash-reporting SDK. Apple’s own processing is described in [[apple]]."
+            ]
+          },
+          {
+            "title": "Support and this website",
+            "paragraphs": [
+              "If you email [[email]], we receive your email address, message and any attachments you send. We use them to respond, investigate the issue and keep necessary correspondence. Please avoid sending precise locations, private alarm labels or unrelated personal information unless needed to explain your issue. Our email provider processes correspondence to deliver the service.",
+              "This website is hosted on GitHub Pages. The host processes technical request data, including IP addresses, to deliver and protect the site under the [[github]]. These pages contain no advertising scripts, analytics scripts, external fonts or developer-set tracking cookies. Opening an external link is subject to the destination’s policies."
+            ]
+          },
+          {
+            "title": "Sharing and international processing",
+            "paragraphs": [
+              "We do not sell or rent your personal information or share it for cross-app advertising. Apple services, GitHub hosting and email delivery process the information necessary for their respective services. We may disclose information we actually hold if required by law, or as necessary to protect rights and security in accordance with applicable law.",
+              "Service providers may process information outside your country under their own safeguards and policies. This is separate from the alarm library stored locally on your device; we do not maintain an overseas copy of that library on our own server."
+            ]
+          },
+          {
+            "title": "Retention, deletion and security",
+            "paragraphs": [
+              "Alarm records and local settings remain until you change or remove them, or delete the app’s data. Recent-location values and weather cache can remain after a related alarm is deleted and are replaced as the app updates them. Deleting an alarm does not necessarily delete a song imported for reuse.",
+              "You can delete alarms in the app and reset manual holiday overrides. To remove the app’s remaining local database, imported audio and preferences, use Delete App in iOS. Offload App retains documents and data. Device or iCloud backups may retain earlier copies according to your Apple backup settings; the app does not offer its own cloud backup or synchronization service.",
+              "We retain support correspondence only for as long as needed to handle the request, maintain relevant support records or meet legal obligations. You may request deletion by email. Apple retains purchase records under its policies; deleting the app does not cancel a subscription.",
+              "The app relies on iOS storage protections and system services. No storage or transmission method is completely secure. Keep your device and operating system protected and up to date."
+            ]
+          },
+          {
+            "title": "Your choices and privacy rights",
+            "paragraphs": [
+              "You control local data through the app and iOS Settings. We cannot access, retrieve or delete an alarm database stored only on your device remotely.",
+              "Depending on applicable law, you may have rights to access, correct, delete or obtain a copy of personal information we hold, restrict or object to processing, withdraw consent, and complain to a data-protection authority. Contact [[email]] to exercise these rights. We may request proportionate information to verify the request. Withdrawing consent does not affect processing already lawfully carried out.",
+              "Where applicable law requires a legal basis, optional device access relies on your permission; handling support requests is necessary to respond to you or based on our legitimate interest in supporting the app; information may also be kept to meet legal obligations. Separate providers determine the basis for their own processing."
+            ]
+          },
+          {
+            "title": "Children and policy updates",
+            "paragraphs": [
+              "The app is a general-purpose reminder tool and does not ask for an age or create child profiles. If a child sends personal information to support, a parent or guardian can contact us to request appropriate action. App Store age ratings and local consent requirements still apply.",
+              "We will update this page when the app’s data practices change and revise the effective date. Material changes will be communicated as required by applicable law. Questions about this policy can be sent to [[email]]."
+            ]
+          }
+        ]
+      },
+      "agreement": {
+        "label": "Terms of Use",
+        "description": "Terms for using Shortcut Alarm, including conditional reminders, Pro purchases, subscriptions and support.",
+        "summary": [
+          "Shortcut Alarm provides time and geofence alarms with optional conditions. Check your settings and permissions before relying on a reminder.",
+          "Pro purchases are processed by Apple. Subscriptions renew unless canceled; a one-time unlock does not renew. Your applicable statutory rights are not limited by these terms."
+        ],
+        "sections": [
+          {
+            "title": "About these terms",
+            "paragraphs": [
+              "These terms describe your use of [[app]] and related support provided by the app developer identified in the App Store listing. Contact: [[email]]. Please read them together with the Privacy Policy linked below.",
+              "The app license is governed by the license agreement applicable to your App Store download, including the [[eula]] where no custom license has been provided. These product-use terms supplement that license; they do not replace Apple’s usage rules or your non-waivable legal rights. Apple purchases are also subject to the [[media]] applicable to your region."
+            ]
+          },
+          {
+            "title": "Features and requirements",
+            "paragraphs": [
+              "The app lets you configure time-based and geofence alarms, with optional time, location, weather, temperature and UV conditions. It requires a compatible iPhone and iOS version as stated in the App Store listing. Some features require permission, an internet connection or Pro access.",
+              "Conditions restrict whether a reminder is scheduled or delivered. A time arriving does not mean the app should ring when the conditions are not met. Check repeat days, time windows, location rules, holiday settings and the information shown in the app."
+            ]
+          },
+          {
+            "title": "Reminder reliability and external information",
+            "paragraphs": [
+              "Alarm delivery and condition checks depend on iOS, device power, permissions, location accuracy, background execution, network access and available forecast data. A geofence event or a background check may be delayed. Forecasts describe expected conditions and may differ from actual weather.",
+              "Keep permissions and device settings appropriate for your alarms and review them after changes. Use an independent backup for essential reminders. The app is not an emergency warning system or a substitute for medical, safety-critical or professional monitoring.",
+              "Maps, weather and holiday information may be incomplete or change. Verify important dates and local requirements with authoritative sources. These practical limits do not remove any obligation or remedy that applicable law requires us to provide."
+            ]
+          },
+          {
+            "title": "Free use and Pro access",
+            "paragraphs": [
+              "The current free tier allows up to three alarms. Pro removes the app’s three-alarm limit and enables weather, temperature and UV conditions; iOS and technical scheduling limits still apply. Available plans may include monthly or yearly subscriptions and a one-time unlock.",
+              "The available features, price, currency, billing period and any offer are displayed before purchase in the app and Apple’s confirmation sheet. Offers and eligibility can vary by storefront and Apple Account. Do not assume a trial or a particular price is available unless it is shown for your purchase."
+            ]
+          },
+          {
+            "title": "Subscriptions, trials and cancellation",
+            "paragraphs": [
+              "Apple charges the payment method associated with your Apple Account when you confirm a purchase. Subscriptions automatically renew unless canceled before renewal. To avoid the next charge, cancel at least 24 hours before the current period ends. Any free trial shown will convert to the displayed paid subscription unless canceled in time.",
+              "Manage or cancel subscriptions in iOS Settings > your name > Subscriptions. See the [[cancel]]. Deleting the app or switching off alarms does not cancel a subscription. Access after cancellation follows the period and status shown by Apple; trial access may end earlier when canceled.",
+              "A one-time unlock is a non-recurring purchase of the Pro entitlement described at purchase. It has no periodic renewal charge. It is not a promise that every future standalone product or unrelated service is included, or that external services will remain available indefinitely. Your purchased entitlement and statutory remedies remain subject to applicable law."
+            ]
+          },
+          {
+            "title": "Restoring purchases and refunds",
+            "paragraphs": [
+              "Use Restore Purchases with the Apple Account used for the original purchase to restore an eligible entitlement. The app must be able to verify it with Apple. A pending, expired or revoked transaction may not provide access.",
+              "Refund requests for App Store purchases can be submitted through Apple using the [[refund]]. Eligibility depends on the purchase and applicable law. These terms do not impose a blanket no-refund rule or restrict statutory cancellation, warranty or consumer rights."
+            ]
+          },
+          {
+            "title": "Music and acceptable use",
+            "paragraphs": [
+              "Only import music you are entitled to use. Importing creates a local copy for your alarm; it does not transfer copyright or grant redistribution rights. Protected Apple Music subscription tracks and songs not accessible on the device may not be exportable.",
+              "Use the app lawfully and respect others’ rights. Do not attempt to disrupt services, bypass purchase verification or access information without authorization. Any restrictions on copying, modification or reverse engineering remain subject to applicable law and relevant licenses."
+            ]
+          },
+          {
+            "title": "Local data and stopping use",
+            "paragraphs": [
+              "You are responsible for maintaining any device backups you need. The app does not provide its own account-based synchronization or a remote recovery service for local alarms and imported sounds. Deleting the app can remove local settings and files.",
+              "You can stop using the app and delete it at any time. Cancel any active subscription separately through Apple. See the Privacy Policy for information about local data, permissions and support correspondence."
+            ]
+          },
+          {
+            "title": "Updates, responsibility and legal rights",
+            "paragraphs": [
+              "We may update the app and these terms to reflect product, security or legal changes. Material changes will be communicated as required by law and the effective date will be updated. Changes do not retrospectively remove rights already acquired under mandatory law.",
+              "We aim to provide the app with reasonable care and skill. We cannot promise uninterrupted operation or error-free external data. Nothing in these terms excludes liability that cannot lawfully be excluded, or limits mandatory consumer protections, warranties or remedies.",
+              "Applicable law determines your rights and the courts or authorities available to you. These terms do not require you to give up mandatory protections in your country of residence. If a provision is unenforceable, the remaining provisions continue to apply to the extent permitted by law."
+            ]
+          },
+          {
+            "title": "Contact and language",
+            "paragraphs": [
+              "For questions, technical support or concerns about these terms, contact [[email]]. Include the app version and enough detail to explain the problem, without unnecessary personal information.",
+              "English and Chinese versions are provided for convenience and are intended to have the same meaning. If a translation differs, we will clarify the wording without reducing your rights under applicable law."
+            ]
+          }
+        ]
+      },
+      "home": {
+        "label": "App & Support",
+        "description": "Shortcut Alarm support, privacy policy and terms of use.",
+        "platform": "iPhone · iOS 26 or later",
+        "headline": "Alarms that follow your conditions.",
+        "intro": [
+          "[[app]] lets you set time and geofence alarms, then decide when they should ring with optional conditions. This site provides support and the app’s privacy policy and terms of use."
+        ],
+        "features": [
+          [
+            "Time and place",
+            "Schedule a time or use a geofence to trigger a reminder."
+          ],
+          [
+            "Optional conditions",
+            "Restrict reminders by time, location, weather, temperature or UV level."
+          ],
+          [
+            "Your alarm library",
+            "Configure repeat days, holiday mode, labels and sounds. Settings and imported audio are stored on your device."
+          ]
+        ],
+        "pricing_heading": "Free & Pro",
+        "price": "Free features. Optional Pro access.",
+        "pricing_text": "The free tier supports up to three alarms. Pro unlocks additional alarm capacity and weather, temperature and UV conditions. Available subscriptions, one-time unlocks and prices are shown in the app before purchase.",
+        "support_heading": "Support",
+        "faq_heading": "Common questions",
+        "faqs": [
+          [
+            "Why did an alarm not ring?",
+            "Check whether the alarm is enabled and its repeat days and conditions are satisfied. Confirm alarm and location permissions as applicable. Background checks, forecasts and location events depend on system availability."
+          ],
+          [
+            "How do I restore or cancel a purchase?",
+            "Use Restore Purchases in the app for eligible purchases. Manage subscriptions in iOS Settings > your name > Subscriptions. Deleting the app does not cancel a subscription."
+          ],
+          [
+            "Can any song become an alarm sound?",
+            "Import requires music permission and an accessible, exportable song. Protected subscription music and unavailable local files may not be supported."
+          ]
+        ],
+        "contact_heading": "Contact the developer",
+        "contact_text": "Include the app version, iOS version and a description of the problem. Please omit unnecessary personal or location information.",
+        "contact_action": "Email support"
+      }
+    },
+    "zh": {
+      "html_lang": "zh-CN",
+      "language_name": "中文",
+      "skip": "跳到正文",
+      "navigation": "网站导航",
+      "language_label": "语言",
+      "footer": "更多信息",
+      "icon_label": "应用图标",
+      "contents": "目录",
+      "applies": "适用应用：",
+      "effective": "生效日期：",
+      "back": "返回",
+      "privacy": {
+        "label": "隐私政策",
+        "description": "说明指令闹钟如何处理闹钟设置、定位、天气请求、导入音乐、购买及支持信息。",
+        "summary": [
+          "闹钟设置和导入音频保存在您的设备上。指令闹钟无需注册应用账号，不含广告或第三方分析 SDK；定位、地图、天气与购买功能会使用下文说明的 Apple 服务。",
+          "我们没有用于接收您的闹钟库、位置或导入音乐的开发者服务器。发送支持邮件或访问本网站时，会涉及另外说明的数据处理。"
+        ],
+        "sections": [
+          {
+            "title": "适用范围与联系方式",
+            "paragraphs": [
+              "本政策适用于当前的指令闹钟（[[app]]）iPhone 应用及其支持网站。“我们”指 App Store 页面列明的应用开发者，联系邮箱为 [[email]]。下文涉及的 Apple 与网站托管方按照各自政策处理相关信息。"
+            ]
+          },
+          {
+            "title": "保存在设备上的信息",
+            "paragraphs": [
+              "应用通过本地存储提供和维护您选择的功能，不会把这些信息上传至开发者运营的账号或同步服务。"
+            ],
+            "items": [
+              "闹钟设置：时间、重复日期、标签、启用状态、铃声、颜色、稍后提醒及提醒方式。",
+              "条件与地点：时间范围、所选地点及坐标、围栏半径、范围内外规则，以及天气、温度和紫外线条件。",
+              "偏好与运行记录：节假日手动修改、导入歌曲名称与文件标识、系统闹钟标识，以及调度和评分提示所需的本地设置。",
+              "定位与天气缓存：最近保存的调度坐标及时间戳，以及下载的逐小时预报、对应地点和获取时间。",
+              "导入音频：将您选择的歌曲转换为供闹钟使用的音频文件，并保存在本机。"
+            ]
+          },
+          {
+            "title": "定位、地图与后台使用",
+            "paragraphs": [
+              "获得许可后，应用会使用您的位置来显示地图当前位置、设置地理围栏闹钟、判断位置条件，以及获取当前位置的天气。保存的地点可能反映您的生活习惯，属于需要谨慎保护的信息。",
+              "当相关闹钟或条件需要时，“始终”定位权限允许应用在不处于前台时进行位置相关判断。应用按需使用系统区域监测和显著位置变化监测，并在本地保留最近的调度坐标，不建立行程轨迹列表。",
+              "地图显示、地点搜索和地址查询使用 Apple MapKit。请求所需的搜索文字、地图区域及坐标会发送至 Apple 服务。相关处理见 [[maps]] 与 [[apple]]。",
+              "您可在 iOS“设置”中调整定位权限和“精确位置”。拒绝或限制定位可能使依赖位置的闹钟或条件无法按设置工作。撤回权限不会自动删除已经保存在应用中的坐标。"
+            ]
+          },
+          {
+            "title": "天气、温度与紫外线",
+            "paragraphs": [
+              "使用天气相关条件时，应用会将位置坐标和预报时间范围用于 Apple WeatherKit 的逐小时天气请求，并在本地缓存返回结果，以判断条件及减少重复请求。请求中不包含您的闹钟标签或导入音乐。",
+              "Apple 说明，WeatherKit 的位置信息用于提供天气预报，不与可识别个人身份的信息关联，也不跨请求追踪。Apple 对该服务的处理说明见 [[weatherkit]] 和 [[apple]]。"
+            ]
+          },
+          {
+            "title": "闹钟与音乐权限",
+            "paragraphs": [
+              "闹钟权限用于通过 iOS 闹钟系统创建和管理提醒。应用会向系统提供必要的时间、展示和铃声设置。闹钟标签可能显示在锁定屏幕等系统闹钟界面中。",
+              "当您选择导入歌曲时，应用会申请音乐库权限，并使用所选歌曲的名称、标识和可访问的音频，生成本地闹钟铃声；不会把音乐库或歌曲上传给我们。撤回音乐权限不会删除已经导入的音频。受保护或当前不可访问的音频可能无法导入。",
+              "您可在 iOS“设置”中更改权限。拒绝可选权限会影响相应功能，不会要求您另行注册应用账号。"
+            ]
+          },
+          {
+            "title": "购买与 Apple 诊断信息",
+            "paragraphs": [
+              "付款由 Apple 处理，Apple 账号和付款资料由 Apple 管理。应用通过 StoreKit 获取商品及已验证交易的信息，例如商品标识、权益状态和撤销状态，用于解锁 Pro 与恢复符合条件的购买。应用不会向我们提供您的银行卡资料，也不会把交易发送至开发者运营的验证服务器。",
+              "Apple 可能根据其服务规则及您的设置向开发者提供 App Store 报告和诊断信息。应用没有另行接入广告、行为分析或崩溃报告 SDK。Apple 自身的数据处理见 [[apple]]。"
+            ]
+          },
+          {
+            "title": "支持邮件与本网站",
+            "paragraphs": [
+              "向 [[email]] 发送邮件时，我们会收到您的邮箱地址、正文和主动提供的附件，用于回复、排查问题及保留必要的往来记录。除非确有必要，请勿提供精确地点、私人闹钟标签或与问题无关的个人信息。邮件服务商会为投递和处理邮件而处理相应内容。",
+              "本网站由 GitHub Pages 托管。托管方会根据 [[github]] 处理 IP 地址等技术请求信息，以提供和保护网站。这些页面没有广告脚本、分析脚本、外部字体或开发者设置的追踪 Cookie。打开外部链接后，适用目标网站的政策。"
+            ]
+          },
+          {
+            "title": "信息提供与跨境处理",
+            "paragraphs": [
+              "我们不出售或出租您的个人信息，也不为跨应用广告共享信息。Apple 服务、GitHub 托管及邮件服务分别处理提供其服务所需的信息。对于我们实际持有的信息，可能在法律要求时，或依照适用法律保护权利和安全所必要时予以提供。",
+              "相关服务商可能按照各自的保障措施与政策，在您所在国家或地区以外处理信息。这与保存在您设备上的闹钟库不同；我们没有在自有境外服务器上保存该闹钟库的副本。"
+            ]
+          },
+          {
+            "title": "保存期限、删除与安全",
+            "paragraphs": [
+              "闹钟记录和本地设置会保留至您修改、删除它们或删除应用数据。最近定位及天气缓存可能在相关闹钟删除后继续保留，并在后续更新时被替换。删除闹钟不一定会删除供重复使用的导入歌曲。",
+              "您可在应用中删除闹钟、重置节假日手动修改。如需移除剩余本地数据库、导入音频及偏好，请在 iOS 中选择“删除 App”；“卸载 App”会保留文稿与数据。设备或 iCloud 备份可能根据您的 Apple 备份设置保留历史副本，应用没有自行提供云备份或同步服务。",
+              "支持邮件仅在处理请求、保留相关支持记录或履行法律义务所需的期间保留。您可通过邮件请求删除。Apple 按其政策保留购买记录；删除应用不会取消订阅。",
+              "应用依赖 iOS 的存储保护和系统服务。任何存储或传输方式都不能保证绝对安全，请保护设备并及时更新系统。"
+            ]
+          },
+          {
+            "title": "您的选择与隐私权利",
+            "paragraphs": [
+              "您可通过应用和 iOS“设置”管理本地数据。对于仅保存在您设备上的闹钟数据库，我们无法远程访问、取回或代为删除。",
+              "根据适用法律，您可能有权访问、更正、删除或获取我们持有的个人信息副本，限制或反对处理、撤回同意，以及向数据保护主管部门投诉。您可联系 [[email]] 提出请求；我们可能要求提供与请求相称的信息以核验身份。撤回同意不影响此前已合法开展的处理。",
+              "在适用法律要求明确处理依据时，可选设备访问基于您的授权；支持信息用于回应您的请求，或基于支持应用的正当利益；部分信息也可能为履行法律义务而保留。独立服务商自行确定其处理活动的依据。"
+            ]
+          },
+          {
+            "title": "未成年人及政策更新",
+            "paragraphs": [
+              "本应用为通用提醒工具，不要求填写年龄，也不建立儿童档案。如未成年人向支持邮箱发送了个人信息，监护人可联系我们请求适当处理。App Store 年龄分级及当地有关同意的要求仍然适用。",
+              "数据处理方式变化时，我们会更新本页面及生效日期，并按适用法律要求告知重大变化。如有疑问，请联系 [[email]]。"
+            ]
+          }
+        ]
+      },
+      "agreement": {
+        "label": "用户协议",
+        "description": "指令闹钟使用条款，涵盖条件提醒、Pro 购买、订阅及支持。",
+        "summary": [
+          "指令闹钟提供时间与地理围栏闹钟，并可添加限制条件。使用提醒前，请确认设置和必要权限。",
+          "Pro 购买由 Apple 处理。订阅在取消前会自动续订，一次性解锁不自动续费。本协议不限制您依法享有的强制性权利。"
+        ],
+        "sections": [
+          {
+            "title": "协议范围",
+            "paragraphs": [
+              "本协议说明您使用指令闹钟（[[app]]）及相关支持服务的规则。服务提供者为 App Store 页面列明的应用开发者，联系邮箱为 [[email]]。请同时阅读页脚链接的隐私政策。",
+              "应用许可受您通过 App Store 下载时适用的许可协议约束；未提供自定义许可时，包括 [[eula]]。本协议对产品使用作补充说明，不替代 Apple 的使用规则或您依法不可放弃的权利。Apple 购买还适用您所在地区的 [[media]]。"
+            ]
+          },
+          {
+            "title": "功能与使用条件",
+            "paragraphs": [
+              "应用支持时间闹钟和地理围栏闹钟，以及时间、位置、天气、温度和紫外线等可选条件。您需要使用 App Store 页面说明的兼容 iPhone 与 iOS 版本。部分功能需要授权、网络连接或 Pro 权益。",
+              "条件会限制提醒是否被安排或触发。设定时间到达，不代表在条件未满足时也应响铃。请核对重复日期、时间范围、位置规则、节假日设置及应用中的相关提示。"
+            ]
+          },
+          {
+            "title": "提醒可靠性与外部信息",
+            "paragraphs": [
+              "提醒和条件判断受 iOS、设备电量、权限、定位精度、后台运行、网络及可用预报数据影响。围栏事件或后台判断可能延迟，天气预报也可能与实际天气不同。",
+              "请保持适合您闹钟的权限与设备设置，并在更改设置后重新核对。重要提醒请准备独立备用方式。本应用不是紧急预警系统，也不能替代医疗、安全关键或专业监测。",
+              "地图、天气与节假日信息可能存在缺漏或变化。重要日期及当地要求请向权威来源核实。这些实际限制不免除适用法律要求我们承担的义务或提供的救济。"
+            ]
+          },
+          {
+            "title": "免费使用与 Pro 权益",
+            "paragraphs": [
+              "当前免费版本最多可创建三个闹钟。Pro 解除应用的三个闹钟数量限制，并开放天气、温度和紫外线条件；iOS 与技术调度限制仍然适用。可用方案可能包括月度订阅、年度订阅和一次性解锁。",
+              "具体功能、价格、货币、计费周期及优惠会在购买前通过应用和 Apple 确认界面展示。方案和资格可能因商店地区与 Apple 账号而不同。未在购买时显示的试用或价格，不应视为已向您提供。"
+            ]
+          },
+          {
+            "title": "订阅、试用与取消",
+            "paragraphs": [
+              "确认购买后，Apple 会通过您 Apple 账号关联的付款方式扣款。订阅在续期前未取消时会自动续订。为避免下一期扣款，请至少在当前周期结束前 24 小时取消。购买时显示的免费试用，在未及时取消时会按展示的方案转为付费订阅。",
+              "您可在 iOS“设置”> 您的姓名 >“订阅”中管理或取消，操作说明见 [[cancel]]。删除应用或关闭闹钟不会取消订阅。取消后的可用期限以 Apple 显示的周期与状态为准；取消试用可能提前结束试用权益。",
+              "一次性解锁是对购买时说明的 Pro 权益进行非周期性购买，不产生定期续费。它不代表所有未来独立产品或无关服务均包含在内，也不保证外部服务永久可用。已购权益及依法享有的救济仍受适用法律保护。"
+            ]
+          },
+          {
+            "title": "恢复购买与退款",
+            "paragraphs": [
+              "您可使用原购买 Apple 账号，通过“恢复购买”恢复符合条件的权益，应用需要能够通过 Apple 验证购买。待处理、已到期或已撤销的交易可能无法提供权益。",
+              "App Store 购买的退款可按 [[refund]] 向 Apple 申请，是否符合条件取决于购买情况与适用法律。本协议不设置一律不退款的规则，也不限制法定取消权、保修权或其他消费者权利。"
+            ]
+          },
+          {
+            "title": "音乐与合理使用",
+            "paragraphs": [
+              "请仅导入您有权使用的音乐。导入会生成供闹钟使用的本地副本，不转移版权，也不授予再次分发的权利。受保护的 Apple Music 订阅曲目，以及本机无法访问的歌曲，可能无法导出。",
+              "请依法使用应用并尊重他人权利，不要干扰服务、绕过购买验证或未经授权访问信息。对于复制、修改或逆向工程的限制，仍以适用法律及相关许可允许的范围为限。"
+            ]
+          },
+          {
+            "title": "本地数据与停止使用",
+            "paragraphs": [
+              "请自行维护需要的设备备份。应用没有提供自有账号同步或本地闹钟、导入音频的远程找回服务。删除应用可能移除本地设置与文件。",
+              "您可随时停止使用并删除应用；有效订阅需要另行通过 Apple 取消。本地数据、权限及支持邮件的处理方式见隐私政策。"
+            ]
+          },
+          {
+            "title": "更新、责任与法定权利",
+            "paragraphs": [
+              "我们可能因产品、安全或法律变化更新应用及本协议，并更新生效日期。重大变化会按法律要求告知，不会追溯剥夺您已依法取得的强制性权利。",
+              "我们会以合理的谨慎和技能提供应用，但无法保证运行永不中断或外部数据完全无误。本协议不排除依法不能排除的责任，也不限制强制性的消费者保护、保修或救济。",
+              "您的权利及可寻求救济的法院或主管部门由适用法律确定。本协议不要求您放弃居住地法律的强制性保护。部分条款不能执行时，其余条款在法律允许的范围内继续适用。"
+            ]
+          },
+          {
+            "title": "联系与语言版本",
+            "paragraphs": [
+              "如对本协议有疑问，或需要技术支持，请联系 [[email]]。说明问题时可附上应用版本和必要信息，无需提供与问题无关的个人资料。",
+              "本协议提供英文与中文版本，两种版本旨在表达相同含义。如出现翻译差异，我们会予以澄清，不因此减少您依法享有的权利。"
+            ]
+          }
+        ]
+      },
+      "home": {
+        "label": "应用与支持",
+        "description": "指令闹钟支持、隐私政策与用户协议。",
+        "platform": "iPhone · iOS 26 或更新版本",
+        "headline": "让闹钟按您设定的条件提醒。",
+        "intro": [
+          "指令闹钟（[[app]]）支持时间闹钟和地理围栏闹钟，并可添加限制条件。本网站提供应用支持、隐私政策及用户协议。"
+        ],
+        "features": [
+          [
+            "时间与地点",
+            "按设定时间或地理围栏事件触发提醒。"
+          ],
+          [
+            "可选条件",
+            "通过时间、位置、天气、温度或紫外线限制提醒。"
+          ],
+          [
+            "自己的闹钟库",
+            "设置重复日期、节假日模式、标签和铃声。配置与导入音频保存在设备上。"
+          ]
+        ],
+        "pricing_heading": "免费与 Pro",
+        "price": "提供免费功能，可选购 Pro。",
+        "pricing_text": "免费版本最多支持三个闹钟。Pro 解除该数量限制，并提供天气、温度及紫外线条件。可用订阅、一次性解锁和价格会在应用购买前展示。",
+        "support_heading": "支持与帮助",
+        "faq_heading": "常见问题",
+        "faqs": [
+          [
+            "为什么闹钟没有响？",
+            "请核对闹钟是否启用、重复日期与条件是否满足，并检查相应的闹钟和定位权限。后台判断、天气预报及围栏事件会受系统可用性影响。"
+          ],
+          [
+            "如何恢复或取消购买？",
+            "在应用中使用“恢复购买”恢复符合条件的权益。订阅可在 iOS“设置”> 您的姓名 >“订阅”中管理。删除应用不会取消订阅。"
+          ],
+          [
+            "所有歌曲都能当铃声吗？",
+            "导入需要音乐权限和可访问、可导出的歌曲。受保护的订阅音乐及本机不可用的文件可能不受支持。"
+          ]
+        ],
+        "contact_heading": "联系开发者",
+        "contact_text": "请提供应用版本、iOS 版本及问题描述，避免发送不必要的个人信息或位置资料。",
+        "contact_action": "发送支持邮件"
+      }
+    }
+  }
+}

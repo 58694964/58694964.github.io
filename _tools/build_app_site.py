@@ -31,6 +31,18 @@ def render_text(value, config):
 def paragraphs(values, config):
     return "\n".join("<p>" + render_text(value, config) + "</p>" for value in values)
 
+def app_styles(config):
+    css = (TEMPLATES / "styles.css").read_text()
+    theme = config.get("theme", {})
+    allowed = {"accent", "summary", "border", "accent_hover"}
+    if set(theme) - allowed or any(not re.fullmatch(r"#[0-9a-fA-F]{6}", value) for value in theme.values()):
+        raise ValueError("Theme must use supported keys and six-digit hex colors")
+    if theme:
+        css += "\n/* App-specific brand colors; other apps retain the shared defaults. */\n:root{" + ";".join("--" + key.replace("_", "-") + ":" + value for key, value in theme.items()) + "}\n"
+        if "accent_hover" in theme:
+            css += ".contact-button:hover{background:var(--accent-hover)}\n"
+    return css
+
 def make_page(kind, locale, config):
     language = config["languages"][locale]
     current = language[kind]
@@ -68,7 +80,7 @@ def make_page(kind, locale, config):
     data = common | dict(content=content, lang=esc(language["html_lang"]), title=esc(current["label"] + " — " + config["app_name"]),
         description=esc(current["description"]), canonical=esc(config["site_url"].rstrip('/') + '/' + locale + '/' + filename),
         alternate_en=esc(config["site_url"].rstrip('/') + '/en/' + filename), alternate_zh=esc(config["site_url"].rstrip('/') + '/zh/' + filename),
-        css=(TEMPLATES / "styles.css").read_text(), language_links="".join(language_links), footer_links="".join(footer_links),
+        css=app_styles(config), language_links="".join(language_links), footer_links="".join(footer_links),
         skip_label=esc(language["skip"]), navigation_label=esc(language["navigation"]), language_label=esc(language["language_label"]),
         footer_label=esc(language["footer"]), year=esc(config["copyright_year"]))
     result = Template((TEMPLATES / "layout.html").read_text()).substitute(data)

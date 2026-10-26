@@ -1,225 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Agreement - Shortcut Alarm</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms for using Shortcut Alarm, including conditional reminders, Pro purchases, subscriptions and support.">
+  <meta name="color-scheme" content="light">
+  <title>Terms of Use — Shortcut Alarm</title>
+  <link rel="canonical" href="https://58694964.github.io/shortcutalarm/en/deepAgreement.html">
+  <link rel="alternate" hreflang="en" href="https://58694964.github.io/shortcutalarm/en/deepAgreement.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://58694964.github.io/shortcutalarm/zh/deepAgreement.html">
+  <link rel="icon" type="image/png" href="../images/app-icon.png">
+  <style>/* Shared layout based on shortcutalarm's existing public pages. */
+:root{--background:#f5f5f7;--surface:#fff;--ink:#333;--heading:#1a1a1a;--muted:#626268;--accent:#0f766e;--summary:#eff8f6;--border:#d9dfdf;--radius:15px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px;color:var(--ink);max-width:1200px;margin:0 auto;padding:20px;background:var(--background);overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;inset-inline-start:20px;top:-100px;padding:10px 16px;background:var(--surface);z-index:2}
+.skip-link:focus{top:12px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;color:var(--heading);text-decoration:none;padding-block:10px}
+.languages{display:flex;gap:8px;align-items:center}
+.languages a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:6px 12px;text-decoration:none;border-radius:8px}
+.languages a[aria-current]{color:var(--heading);background:var(--surface);font-weight:600;box-shadow:0 1px 3px #00000012}
+.header{text-align:center;padding:40px 0}
+.app-header{display:flex;align-items:center;justify-content:center;gap:20px}
+.logo{width:80px;height:80px;object-fit:contain;border-radius:15px;flex-shrink:0}
+h1{font-size:2.5rem;line-height:1.25;color:var(--heading);font-weight:700}
+h2{font-size:1.5rem;line-height:1.4;color:var(--heading);margin-block:0 20px}
+h3{font-size:1.2rem;line-height:1.45;color:var(--heading);margin-block:24px 10px}
+h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+p{margin-bottom:15px}
+p:last-child{margin-bottom:0}
+.meta time{white-space:nowrap}
+.meta{color:var(--muted);font-size:.95rem}
+.app-header .meta{margin-top:10px}
+.card{background:var(--surface);padding:40px;border-radius:var(--radius);box-shadow:0 4px 6px #0000001a;margin-bottom:30px}
+.feature-list{list-style:none;margin-top:22px}
+.feature-list li{margin-block:14px;padding-inline-start:22px;position:relative}
+.feature-list li::before{content:"";position:absolute;inset-inline-start:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.price{font-size:1.6rem;font-weight:600;color:var(--accent);margin-block:10px}
+.faq-item{margin-block:22px}
+.contact-support{border-top:1px solid var(--border);padding-top:8px;margin-top:30px}
+.contact-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.contact-button:hover{background:#115e59;text-decoration:none}
+.contact-button:active{transform:translateY(1px)}
+.contact-address{margin-top:12px}
+.document-header{padding-bottom:30px}
+.summary{background:var(--summary);border-inline-start:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-block:20px 30px}
+.toc{background:#f8f9fa;padding:20px 24px;border-radius:10px;margin-bottom:30px}
+.toc h2{font-size:1.1rem;margin-bottom:12px}
+ol,ul{padding-inline-start:24px}
+.toc li{margin-block:8px}
+.document section{margin-top:30px}
+.document section h2{margin-bottom:15px}
+.document section li{margin-bottom:8px}
+.document ul{margin-bottom:15px}
+.back-link{display:inline-flex;align-items:center;min-height:44px;margin-top:24px}
+.footer{text-align:center;padding:20px;font-size:.95rem;color:var(--muted)}
+.footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin-bottom:12px}
+.footer nav a{display:inline-flex;align-items:center;min-height:44px}
+.footer nav a[aria-current]{color:var(--heading);font-weight:600;text-decoration:none}
+.copyright{font-size:.85rem}
+@media(max-width:600px){body{padding:16px}.header{padding-block:30px}.app-header{flex-direction:column;gap:16px}h1{font-size:2rem}h2{font-size:1.3rem}.card{padding:24px;margin-bottom:20px}.summary,.toc{padding:18px}.footer{padding:16px 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.contact-button:active{transform:none}}
+@media print{body{background:white;max-width:none;padding:0;color:black}.topbar,.skip-link,.footer,.back-link,.contact-button{display:none}.card{box-shadow:none;padding:0}.header{padding:0 0 24px}.summary{border-color:#555}.document section{break-inside:avoid}a{color:inherit}}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f7;
-        }
-
-        .header {
-            text-align: center;
-            padding: 40px 0;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-        }
-
-        .content {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #1a1a1a;
-            margin: 30px 0 15px 0;
-            font-size: 1.5em;
-        }
-
-        h3 {
-            color: #1a1a1a;
-            margin: 20px 0 10px 0;
-            font-size: 1.2em;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        ul {
-            margin: 0 0 15px 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .notice {
-            background: #fdf6e3;
-            border-left: 4px solid #d09000;
-            padding: 20px 24px;
-            border-radius: 10px;
-            margin: 20px 0 30px 0;
-        }
-
-        .notice p:last-child {
-            margin-bottom: 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #568214;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .meta {
-            color: #666;
-            font-size: 0.95em;
-        }
-    </style>
+/* App-specific brand colors; other apps retain the shared defaults. */
+:root{--accent:#EA493D;--accent-hover:#CE3B30;--summary:#FFF3F1;--border:#E4D9D8}
+.contact-button:hover{background:var(--accent-hover)}
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1>User Agreement</h1>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="topbar" aria-label="Site navigation">
+    <a class="brand" href="index.html"><bdi>Shortcut Alarm</bdi></a>
+    <div class="languages" aria-label="Language"><a lang="en" hreflang="en" href="../en/deepAgreement.html" aria-current="page">English</a><a lang="zh-CN" hreflang="zh-CN" href="../zh/deepAgreement.html">中文</a></div>
+  </nav>
+  <header class="header document-header"><h1>Terms of Use</h1></header>
+<main id="main" class="card document">
+  <p class="meta">Applies to: <bdi>Shortcut Alarm</bdi> · Effective date: <time datetime="2026-10-26">2026-10-26</time></p>
+  <div class="summary"><p>Shortcut Alarm provides time and geofence alarms with optional conditions. Check your settings and permissions before relying on a reminder.</p>
+<p>Pro purchases are processed by Apple. Subscriptions renew unless canceled; a one-time unlock does not renew. Your applicable statutory rights are not limited by these terms.</p></div>
+  <nav class="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#section-1">About these terms</a></li>
+<li><a href="#section-2">Features and requirements</a></li>
+<li><a href="#section-3">Reminder reliability and external information</a></li>
+<li><a href="#section-4">Free use and Pro access</a></li>
+<li><a href="#section-5">Subscriptions, trials and cancellation</a></li>
+<li><a href="#section-6">Restoring purchases and refunds</a></li>
+<li><a href="#section-7">Music and acceptable use</a></li>
+<li><a href="#section-8">Local data and stopping use</a></li>
+<li><a href="#section-9">Updates, responsibility and legal rights</a></li>
+<li><a href="#section-10">Contact and language</a></li></ol></nav>
+  <section id="section-1"><h2>1. About these terms</h2><p>These terms describe your use of <bdi>Shortcut Alarm</bdi> and related support provided by the app developer identified in the App Store listing. Contact: <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>. Please read them together with the Privacy Policy linked below.</p>
+<p>The app license is governed by the license agreement applicable to your App Store download, including the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a> where no custom license has been provided. These product-use terms supplement that license; they do not replace Apple’s usage rules or your non-waivable legal rights. Apple purchases are also subject to the <a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms</a> applicable to your region.</p></section>
+<section id="section-2"><h2>2. Features and requirements</h2><p>The app lets you configure time-based and geofence alarms, with optional time, location, weather, temperature and UV conditions. It requires a compatible iPhone and iOS version as stated in the App Store listing. Some features require permission, an internet connection or Pro access.</p>
+<p>Conditions restrict whether a reminder is scheduled or delivered. A time arriving does not mean the app should ring when the conditions are not met. Check repeat days, time windows, location rules, holiday settings and the information shown in the app.</p></section>
+<section id="section-3"><h2>3. Reminder reliability and external information</h2><p>Alarm delivery and condition checks depend on iOS, device power, permissions, location accuracy, background execution, network access and available forecast data. A geofence event or a background check may be delayed. Forecasts describe expected conditions and may differ from actual weather.</p>
+<p>Keep permissions and device settings appropriate for your alarms and review them after changes. Use an independent backup for essential reminders. The app is not an emergency warning system or a substitute for medical, safety-critical or professional monitoring.</p>
+<p>Maps, weather and holiday information may be incomplete or change. Verify important dates and local requirements with authoritative sources. These practical limits do not remove any obligation or remedy that applicable law requires us to provide.</p></section>
+<section id="section-4"><h2>4. Free use and Pro access</h2><p>The current free tier allows up to three alarms. Pro removes the app’s three-alarm limit and enables weather, temperature and UV conditions; iOS and technical scheduling limits still apply. Available plans may include monthly or yearly subscriptions and a one-time unlock.</p>
+<p>The available features, price, currency, billing period and any offer are displayed before purchase in the app and Apple’s confirmation sheet. Offers and eligibility can vary by storefront and Apple Account. Do not assume a trial or a particular price is available unless it is shown for your purchase.</p></section>
+<section id="section-5"><h2>5. Subscriptions, trials and cancellation</h2><p>Apple charges the payment method associated with your Apple Account when you confirm a purchase. Subscriptions automatically renew unless canceled before renewal. To avoid the next charge, cancel at least 24 hours before the current period ends. Any free trial shown will convert to the displayed paid subscription unless canceled in time.</p>
+<p>Manage or cancel subscriptions in iOS Settings &gt; your name &gt; Subscriptions. See the <a href="https://support.apple.com/en-us/118428">Apple subscription cancellation guide</a>. Deleting the app or switching off alarms does not cancel a subscription. Access after cancellation follows the period and status shown by Apple; trial access may end earlier when canceled.</p>
+<p>A one-time unlock is a non-recurring purchase of the Pro entitlement described at purchase. It has no periodic renewal charge. It is not a promise that every future standalone product or unrelated service is included, or that external services will remain available indefinitely. Your purchased entitlement and statutory remedies remain subject to applicable law.</p></section>
+<section id="section-6"><h2>6. Restoring purchases and refunds</h2><p>Use Restore Purchases with the Apple Account used for the original purchase to restore an eligible entitlement. The app must be able to verify it with Apple. A pending, expired or revoked transaction may not provide access.</p>
+<p>Refund requests for App Store purchases can be submitted through Apple using the <a href="https://support.apple.com/en-us/118223">Apple refund guide</a>. Eligibility depends on the purchase and applicable law. These terms do not impose a blanket no-refund rule or restrict statutory cancellation, warranty or consumer rights.</p></section>
+<section id="section-7"><h2>7. Music and acceptable use</h2><p>Only import music you are entitled to use. Importing creates a local copy for your alarm; it does not transfer copyright or grant redistribution rights. Protected Apple Music subscription tracks and songs not accessible on the device may not be exportable.</p>
+<p>Use the app lawfully and respect others’ rights. Do not attempt to disrupt services, bypass purchase verification or access information without authorization. Any restrictions on copying, modification or reverse engineering remain subject to applicable law and relevant licenses.</p></section>
+<section id="section-8"><h2>8. Local data and stopping use</h2><p>You are responsible for maintaining any device backups you need. The app does not provide its own account-based synchronization or a remote recovery service for local alarms and imported sounds. Deleting the app can remove local settings and files.</p>
+<p>You can stop using the app and delete it at any time. Cancel any active subscription separately through Apple. See the Privacy Policy for information about local data, permissions and support correspondence.</p></section>
+<section id="section-9"><h2>9. Updates, responsibility and legal rights</h2><p>We may update the app and these terms to reflect product, security or legal changes. Material changes will be communicated as required by law and the effective date will be updated. Changes do not retrospectively remove rights already acquired under mandatory law.</p>
+<p>We aim to provide the app with reasonable care and skill. We cannot promise uninterrupted operation or error-free external data. Nothing in these terms excludes liability that cannot lawfully be excluded, or limits mandatory consumer protections, warranties or remedies.</p>
+<p>Applicable law determines your rights and the courts or authorities available to you. These terms do not require you to give up mandatory protections in your country of residence. If a provision is unenforceable, the remaining provisions continue to apply to the extent permitted by law.</p></section>
+<section id="section-10"><h2>10. Contact and language</h2><p>For questions, technical support or concerns about these terms, contact <a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a>. Include the app version and enough detail to explain the problem, without unnecessary personal information.</p>
+<p>English and Chinese versions are provided for convenience and are intended to have the same meaning. If a translation differs, we will clarify the wording without reducing your rights under applicable law.</p></section>
+  <a class="back-link" href="index.html">Back to Shortcut Alarm</a>
+</main>
 
-    <div class="content">
-        <p class="meta">Applies to: Shortcut Alarm for iOS &nbsp;·&nbsp; Effective date: September 9, 2026</p>
-
-        <div class="notice">
-            <p><strong>Please read Section 6 before you rely on this app.</strong> Shortcut Alarm schedules alarms through the operating system and evaluates conditions using location and weather data supplied by the operating system. None of those are guaranteed to be complete, timely, or correct in every situation. Do not use it as your only safeguard for anything where a missed alarm would cause real harm.</p>
-        </div>
-
-        <h2>Special Notice</h2>
-
-        <p>Welcome to Shortcut Alarm. This User Agreement (the "Agreement") is concluded between you (the "User") and the developer of the application named "Shortcut Alarm" (the "App", "we", or "us") regarding your download, installation, and use of the App.</p>
-
-        <p>Please read this Agreement carefully before using the App, paying particular attention to the disclaimer in Section 6 and the limitation of liability in Section 6.4. By downloading, installing, or using the App, you confirm that you have read, understood, and accepted this Agreement in full. If you do not accept any part of it, please do not use the App and remove it from your device.</p>
-
-        <h2>1. Acceptance of Terms</h2>
-
-        <p>1.1 This Agreement takes effect when you first use the App and remains in effect for as long as you continue to use it.</p>
-
-        <p>1.2 You must have the legal capacity to enter into this Agreement. If you are a minor, please use the App with the consent and supervision of your parent or guardian.</p>
-
-        <p>1.3 This Agreement is supplemented by our Privacy Policy, which forms an integral part of it. Where the two differ on a matter of information handling, the Privacy Policy prevails.</p>
-
-        <h2>2. Products and Services</h2>
-
-        <p>2.1 The App is a conditional alarm clock for iOS. It allows you to create alarms that are triggered by a time or by entering or leaving a geographic area, and to attach conditions — time range, location, weather, temperature, and UV index — that determine whether, and at what moment, an alarm actually rings.</p>
-
-        <p>2.2 The App is free to download and contains no advertising. In its free form you may keep up to three alarms, and every condition type is available for you to configure, so that you can try a condition before deciding whether to pay for it. Saving an alarm that uses a weather, temperature, or UV index condition, or keeping more than three alarms, requires Pro.</p>
-
-        <p>2.3 <strong>Pro</strong> is the paid tier of the App. It removes the limit on the number of alarms and unlocks the weather, temperature, and UV index conditions. It is offered in three forms: a monthly auto-renewing subscription, a yearly auto-renewing subscription, and a one-time purchase that does not renew. The current price of each is shown in the App before you confirm a purchase, and varies by country or region.</p>
-
-        <p>2.4 <strong>Auto-renewing subscriptions.</strong> Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically for the same period, at the then-current price, unless you turn off auto-renewal at least 24 hours before the end of the current period. Your account is charged for the renewal within the 24 hours before the current period ends. You can view, manage, and turn off auto-renewal at any time in the Apple Account settings on your device. Deleting the App does not cancel a subscription.</p>
-
-        <p>2.5 <strong>Free trial.</strong> Where a free trial is offered, it is available once per Apple Account, and your eligibility for it is determined by the App Store rather than by us. If you do not cancel before the trial ends, the subscription begins and is charged automatically. If you purchase a subscription during a trial, any unused part of that trial is forfeited.</p>
-
-        <p>2.6 <strong>One-time purchase.</strong> The one-time purchase grants Pro for as long as the App remains available to the Apple Account used to buy it. It does not renew, is not a subscription, and there is nothing to cancel. It does not entitle you to any separate application we may publish in future.</p>
-
-        <p>2.7 <strong>Payment and refunds.</strong> All purchases are processed by Apple, not by us. We never receive or store your payment details. Refunds are handled by Apple under the terms of the App Store; we can neither grant nor refuse one. You are welcome to contact us if something has gone wrong, and we will help where we can.</p>
-
-        <p>2.8 <strong>Price changes.</strong> If we change the price of a subscription, the change applies to an existing subscription only as the App Store rules permit — in the relevant cases those rules require your explicit consent before a higher price takes effect. If you do not wish to continue at a new price, you may cancel at any time.</p>
-
-        <p>2.9 <strong>Restoring purchases.</strong> Your entitlement is tied to your Apple Account. On a new device, or after reinstalling, it is normally restored automatically once you are signed in to the same Apple Account. The App also provides a "Restore Purchases" action for the cases where it is not.</p>
-
-        <p>2.10 The App runs entirely on your device. It requires no account, and we operate no server to which your data is sent. Weather, temperature, and UV conditions require a network connection in order for the operating system to retrieve a forecast; all other features work offline.</p>
-
-        <p>2.11 We may add, change, or remove features in future versions in order to improve the App or to keep it compatible with new versions of iOS. Where a change materially affects how your existing alarms behave, we will make that clear in the App.</p>
-
-        <h2>3. Usage Rules</h2>
-
-        <p>3.1 You may use the App for your own personal, non-commercial purposes on devices you own or control.</p>
-
-        <p>3.2 You agree not to:</p>
-        <ul>
-            <li>decompile, disassemble, reverse-engineer, or otherwise attempt to derive the source code of the App, except to the extent that applicable law expressly permits it;</li>
-            <li>modify, adapt, or create derivative works of the App, or remove or obscure any notice of ownership contained in it;</li>
-            <li>redistribute, resell, rent, lease, sublicense, or otherwise make the App available to any third party;</li>
-            <li>use the App in any way that interferes with the operating system's alarm, location, or weather services, or that circumvents any technical restriction of the platform;</li>
-            <li>use the App for any purpose that is unlawful in your jurisdiction, or in a manner that infringes the rights of others.</li>
-        </ul>
-
-        <p>3.3 You are responsible for the settings you create. Choosing a reminder mode that suppresses an alarm when a condition holds, disabling an alarm, or denying a required system permission will prevent that alarm from ringing — this is intended behaviour, not a defect.</p>
-
-        <p>3.4 You are responsible for the security of your own device, including its passcode and biometric locks. Because all of your alarm data lives on the device, anyone with access to the unlocked device has access to that data.</p>
-
-        <h2>4. Intellectual Property Rights</h2>
-
-        <p>4.1 We own or are licensed to use all intellectual property rights in the App, including its source code, interface design, icons, illustrations, text, sounds, and the "Shortcut Alarm" name and logo. This Agreement grants you a personal, non-exclusive, non-transferable, revocable licence to use the App; it transfers no ownership to you.</p>
-
-        <p>4.2 The alarm tones included in the App are used under licences that permit their distribution within it. They are provided for use as alarm sounds inside the App only, and may not be extracted or redistributed.</p>
-
-        <p>4.3 Music you choose from your own library remains yours and is governed by the terms under which you acquired it. The App merely plays it as an alarm sound; it does not copy, export, or redistribute it.</p>
-
-        <p>4.4 Weather data displayed or evaluated by the App is provided by the weather service built into iOS and remains the property of its provider. Attribution and the provider's legal notice are shown in the App, as that provider requires.</p>
-
-        <p>4.5 Public holiday data included in the App is derived from officially published calendars. We make no claim of ownership over the underlying facts, and we do not warrant that the data is complete or current for every region and year.</p>
-
-        <h2>5. Personal Privacy</h2>
-
-        <p>5.1 The App does not collect your personal information. There is no account, no sign-in, and no server of ours. What the App stores, why it requests each system permission, and the single case in which a coordinate leaves your device are described in full in our Privacy Policy.</p>
-
-        <p>5.2 By using features that depend on location, weather, or your music library, you consent to the App using the corresponding system permission for the purpose described in the Privacy Policy. You may withdraw that consent at any time in iOS Settings.</p>
-
-        <h2>6. Disclaimer</h2>
-
-        <p>6.1 <strong>The App is provided "as is" and "as available", without warranty of any kind</strong>, whether express or implied, including any implied warranty of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or that every alarm will fire at the exact moment expected.</p>
-
-        <p>6.2 <strong>The App depends on services it does not control.</strong> Alarms are registered with and delivered by the operating system. Boundary crossings for geofence alarms are detected by the operating system's location services and are subject to signal quality, power-saving behaviour, and the permissions you have granted. Weather, temperature, and UV values come from a third-party forecast, which is a prediction and may be wrong. A change in operating system behaviour, a revoked permission, a disabled background refresh, a device that is switched off or out of battery, or an unavailable network can all cause an alarm not to ring, or to ring later than expected.</p>
-
-        <p>6.3 <strong>Do not rely on the App as a sole safeguard.</strong> You should not use it as your only means of being alerted to anything where a missed or delayed alarm could result in personal injury, loss of life, financial loss, missed medical treatment, or other serious harm. For such purposes, use an additional independent alarm.</p>
-
-        <p>6.4 To the fullest extent permitted by applicable law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profit, revenue, data, or opportunity, arising out of or in connection with your use of or inability to use the App — including any consequence of an alarm that did not ring, rang late, or rang when you did not expect it. Nothing in this Agreement excludes or limits liability that cannot lawfully be excluded or limited, and some jurisdictions do not allow certain exclusions, in which case the exclusions above apply only to the extent permitted there.</p>
-
-        <p>6.5 We are not responsible for problems caused by your device, its operating system, its settings, third-party software, or network conditions outside our control.</p>
-
-        <h2>7. Agreement Modification</h2>
-
-        <p>7.1 We may revise this Agreement from time to time, for example when the App gains a significant new feature or when applicable law changes.</p>
-
-        <p>7.2 The revised Agreement takes effect when it is published at this address, with an updated effective date. Where a revision materially affects your rights, we will draw attention to it in the App.</p>
-
-        <p>7.3 If you do not accept a revised Agreement, please stop using the App and remove it from your device. Continuing to use the App after a revision constitutes acceptance of it.</p>
-
-        <h2>8. Handling of Breach of Contract</h2>
-
-        <p>8.1 If you use the App in breach of Section 3, we may take reasonable measures in proportion to the breach, including terminating the licence granted to you under this Agreement.</p>
-
-        <p>8.2 Because the App requires no account and runs locally, we have no technical ability to suspend an individual user's access. Termination of the licence therefore means that you must stop using the App and remove it from your device.</p>
-
-        <p>8.3 You remain responsible for any loss caused to us or to a third party by your breach of this Agreement.</p>
-
-        <h2>9. Other Terms</h2>
-
-        <p>9.1 If any provision of this Agreement is held to be invalid or unenforceable, that provision shall be modified to the minimum extent necessary, or severed, and the remaining provisions shall continue in full force.</p>
-
-        <p>9.2 Our failure to enforce any provision of this Agreement shall not be construed as a waiver of that provision.</p>
-
-        <p>9.3 The App is distributed through the Apple App Store, and your use of it is additionally subject to Apple's own terms. Apple is not a party to this Agreement and has no responsibility for the App or its content. Where Apple's terms conflict with this Agreement in respect of the distribution of the App, Apple's terms prevail.</p>
-
-        <p>9.4 This Agreement constitutes the entire agreement between you and us regarding the App, and supersedes any prior understanding on the same subject.</p>
-
-        <p>9.5 If you have any question about this Agreement, please contact us at 617646201lzy@gmail.com. We aim to respond within 24 hours.</p>
-
-        <a class="back-link" href="home.html">&larr; Back to Shortcut Alarm</a>
-    </div>
+  <footer class="footer">
+    <nav aria-label="More information"><a href="index.html">App &amp; Support</a><a href="deepPrivacy.html">Privacy Policy</a><a href="deepAgreement.html" aria-current="page">Terms of Use</a></nav>
+    <p><a href="mailto:617646201lzy@gmail.com">617646201lzy@gmail.com</a></p>
+    <p class="copyright">© 2026 <bdi>Shortcut Alarm</bdi></p>
+  </footer>
 </body>
 </html>
